@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Lato:ital@1&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Lato:ital@1&family=Merriweather:wght@700;900&family=Zen+Antique&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+        .menu {
+            font-size: 22px;
+            background-color: #0c155a;
+            color: white;
+            margin: -22px -8px 0px -8px;
+            font-family: 'Cabin', sans-serif;
+        }
+
+        p {
+            width: 100px;
+            padding: 10px 23px;
+        }
+
+        .logo-1 {
+            padding: 0px 20px;
+            margin: -22px 0px 30px 0px;
+        }
+
+        .homeimg {
+            width: 313px;
+            float: right;
+            margin: -22px 0px 0px 0px;
+        }
+
+        .profilebar {
+            margin: 0px -8px;
+            background-color: #0c155a;
+            height: 70px;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile {
+            width: 50px;
+            padding: 10px 20px;
+        }
+
+        .search {
+            height: 28px;
+            width: 1033px;
+            padding: 0px 10px;
+            margin: 10px 0px;
+        }
+
+        .btn {
+            width: 175px;
+            height: 35px;
+            border: 0px;
+            margin: 0px 40px;
+            border-radius: 5px;
+            color: white;
+            background-image: linear-gradient(#39a7d6, #1a5db4, #0b1a91);
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-image: linear-gradient(#0b1a91, #0b1a91, #0b1a91);
+        }
+
+        .btn1 {
+            width: 100px;
+            height: 35px;
+            border: 0px;
+            border-radius: 5px;
+            margin: 0px 40px 0px 0px;
+            color: white;
+            background-image: linear-gradient(#39a7d6, #1a5db4, #0b1a91);
+            cursor: pointer;
+        }
+
+        .btn1:hover {
+            background-image: linear-gradient(#0b1a91, #0b1a91, #0b1a91);
+        }
+
+        .container {
+            background-image: url('file:///D:/mini%20project/job2.png');
+            background-repeat: no-repeat;
+            background-position: center top;
+            margin: 0px -8px;
+            padding: 28px;
+        }
+
+        .body {
+            display: flex;
+        }
+
+        .notifications {
+            margin: 0% 8.5% 0% 0%;
+            width: 9%;
+        }
+
+        .allindia {
+            margin: 0% 8.5% 0% 0%;
+            width: auto;
+        }
+
+        .allstate {
+            margin: 0% 8.5% 0% 0%;
+            width: auto;
+        }
+
+        .job {
+            margin: 0px;
+            width: 9%;
+        }
+
+        .btn2 {
+            border-radius: 0;
+            width: 100%;
+            height: 32px;
+            text-align: left;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .btn2:hover {
+            background-color: #68aae0;
+            color: white;
+        }
+
+        .btn3 {
+            height: 46px;
+            width: 100%;
+            text-align: left;
+            border-radius: 0;
+            margin: -2px 0px 0px 0px;
+            cursor: pointer;
+        }
+
+        .btn3:hover {
+            background-color: #68aae0;
+            color: white;
+        }
+
+        .btn4 {
+            width: 100%;
+            height: 32px;
+            text-align: left;
+            border-radius: 0;
+            margin: -2px 0px 0px 0px;
+            cursor: pointer;
+        }
+
+        .btn4:hover {
+            background-color: #68aae0;
+            color: white;
+        }
+
+        .btn5 {
+            height: 52px;
+            width: 100%;
+            text-align: center;
+            font-size: larger;
+            font-weight: 800;
+            border-radius: 0;
+            background-image: linear-gradient(#a3e8ec, #1990b4, #1990b4, #1990b4, #1990b4, #1990b4);
+            border: 0px;
+            color: white;
+            font-family: 'Merriweather', serif;
+            cursor: pointer;
+        }
+
+        .btn5:hover {
+            background-image: linear-gradient(#3ad3db, #1990b4, #1990b4, #1990b4, #3ad3db);
+            font-size: 19px;
+        }
+
+        .btn6 {
+            height: 52px;
+            padding-left: 150px;
+            padding-right: 150px;
+            text-align: center;
+            font-size: larger;
+            font-weight: 800;
+            border-radius: 0;
+            background-image: linear-gradient(#a3e8ec, #1990b4, #1990b4, #1990b4, #1990b4, #1990b4);
+            border: 0px;
+            color: white;
+            font-family: 'Merriweather', serif;
+            margin: 6px 0px;
+            cursor: pointer;
+        }
+
+        .btn6:hover {
+            background-image: linear-gradient(#3ad3db, #1990b4, #1990b4, #1990b4, #3ad3db);
+            font-size: 19px;
+        }
+
+        .btn7 {
+            height: 52px;
+            width: 100%;
+            text-align: center;
+            font-size: larger;
+            font-weight: 800;
+            border-radius: 0;
+            background-image: linear-gradient(#a3e8ec, #1990b4, #1990b4, #1990b4, #1990b4, #1990b4);
+            border: 0px;
+            color: white;
+            font-family: 'Merriweather', serif;
+            cursor: pointer;
+        }
+
+        .btn7:hover {
+            background-image: linear-gradient(#3ad3db, #1990b4, #1990b4, #1990b4, #3ad3db);
+            font-size: 19px;
+        }
+
+        .btn8 {
+            height: 52px;
+            width: 100%;
+            text-align: center;
+            font-size: larger;
+            font-weight: 800;
+            border-radius: 0;
+            margin: 6px 0px;
+            background-image: linear-gradient(#a3e8ec, #1990b4, #1990b4, #1990b4, #1990b4, #1990b4);
+            border: 0px;
+            color: white;
+            font-family: 'Merriweather', serif;
+            cursor: pointer;
+        }
+
+        .btn8:hover {
+            background-image: linear-gradient(#3ad3db, #1990b4, #1990b4, #1990b4, #3ad3db);
+            font-size: 19px;
+        }
+
+        .btn9 {
+            height: 52px;
+            width: 100%;
+            text-align: center;
+            font-size: larger;
+            font-weight: 800;
+            border-radius: 0;
+            background-image: linear-gradient(#a3e8ec, #1990b4, #1990b4, #1990b4, #1990b4, #1990b4);
+            border: 0px;
+            color: white;
+            font-family: 'Merriweather', serif;
+            cursor: pointer;
+        }
+
+        .btn9:hover {
+            background-image: linear-gradient(#3ad3db, #1990b4, #1990b4, #1990b4, #3ad3db);
+            font-size: 19px;
+        }
+
+        .btn10 {
+            height: 52px;
+            width: 100%;
+            text-align: center;
+            font-size: larger;
+            font-weight: 800;
+            border-radius: 0;
+            background-image: linear-gradient(#a3e8ec, #1990b4, #1990b4, #1990b4, #1990b4, #1990b4);
+            border: 0px;
+            color: white;
+            font-family: 'Merriweather', serif;
+            margin: 6px 0px;
+            cursor: pointer;
+        }
+
+        .btn10:hover {
+            background-image: linear-gradient(#3ad3db, #1990b4, #1990b4, #1990b4, #3ad3db);
+            font-size: 19px;
+        }
+
+        .btn11 {
+            height: 52px;
+            width: 100%;
+            text-align: center;
+            font-size: larger;
+            font-weight: 800;
+            border-radius: 0;
+            background-image: linear-gradient(#a3e8ec, #1990b4, #1990b4, #1990b4, #1990b4, #1990b4);
+            border: 0px;
+            color: white;
+            font-family: 'Merriweather', serif;
+            cursor: pointer;
+        }
+
+        .btn11:hover {
+            background-image: linear-gradient(#3ad3db, #1990b4, #1990b4, #1990b4, #3ad3db);
+            font-size: 19px;
+        }
+
+        .btn12 {
+            height: 52px;
+            padding-left: 150px;
+            padding-right: 150px;
+            text-align: center;
+            font-size: larger;
+            font-weight: 800;
+            border-radius: 0;
+            margin: 6px 0px;
+            background-image: linear-gradient(#a3e8ec, #1990b4, #1990b4, #1990b4, #1990b4, #1990b4);
+            border: 0px;
+            color: white;
+            font-family: 'Merriweather', serif;
+            cursor: pointer;
+        }
+
+        .btn12:hover {
+            background-image: linear-gradient(#3ad3db, #1990b4, #1990b4, #1990b4, #3ad3db);
+            font-size: 19px;
+        }
+
+        .btn13 {
+            border-radius: 0;
+            width: 100%;
+            height: 32px;
+            text-align: left;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .btn13:hover {
+            background-color: #e4a16a;
+            color: white;
+        }
+
+        .btn14 {
+            border-radius: 0;
+            width: 100%;
+            height: 32px;
+            text-align: left;
+            margin: -2px 0px 0px 0px;
+            cursor: pointer;
+        }
+
+        .btn14:hover {
+            background-color: #e4a16a;
+            color: white;
+        }
+
+        .btn15 {
+            width: 100%;
+            height: 32px;
+            text-align: left;
+            border-radius: 0;
+            margin: -2px 0px 0px 0px;
+            cursor: pointer;
+        }
+
+        .btn15:hover {
+            background-color: #e4a16a;
+            color: white;
+        }
+
+        .btn16 {
+            border-radius: 0;
+            width: 100%;
+            height: 32px;
+            text-align: left;
+            margin: -2px 0px 0px 0px;
+            cursor: pointer;
+        }
+
+        .btn16:hover {
+            background-color: #e4a16a;
+            color: white;
+        }
+
+        .btn17 {
+            width: 100%;
+            height: 32px;
+            text-align: left;
+            border-radius: 0;
+            margin: -2px 0px 0px 0px;
+            cursor: pointer;
+        }
+
+        .btn17:hover {
+            background-color: #e4a16a;
+            color: white;
+        }
+
+        .panel {
+            margin-top: 20px;
+            border: 8px;
+            border-color: #084ea8;
+        }
+
+        .panel-heading {
+            height: 28px;
+            width: 100%;
+            background-color: #9cbeebd0;
+            color: red;
+            font-style: italic;
+            padding-left: 8px;
+        }
+
+        .panel-body {
+            overflow-y: scroll;
+            height: 150px;
+            width: 98.9%;
+            padding: 0px 12px 12px 12px;
+            background-image: linear-gradient(#9cbeebd0, #89b5eed0, #79aceed0, #609decd0, #4c92eed0, #3082eed0);
+        }
+
+        .footer {
+            height: 12vh;
+            width: 100%;
+            border-right-width: 10px;
+            padding-right: 16px;
+            margin: 0px 8px -8px -8px;
+            background-color: #0c155a;
+            color: white;
+            font-family: 'Lato', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .disclaimer {
+            width: 80%;
+            text-align: center;
+        }
+
+        .image2 {
+            display: none;
+        }
+
+        @media only screen and (max-width: 720px) {
+            .logo-1 {
+                display: none;
+            }
+
+            .homeimg {
+                display: none;
+            }
+
+            .image2 {
+                display: block;
+                width: 100%;
+                margin-top: -20px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <p>Menu</p>
+        </div>
+    </nav>
+    <div>
+        <img class="logo-1" title="Join Recruiting Job" alt="Join Recruiting Job"
+            src="file:///D:/mini%20project/logo.png">
+        <img src="file:///C:/Users/admin/Pictures/Saved%20Pictures/Homeimg%20phone.png" class="image2" />
+        <img class="homeimg" title="Latest Government Jobs" alt="Latest Government Jobs"
+            src="file:///D:/mini%20project/homeimg.jpg">
+    </div>
+    <div class="profilebar">
+        <img class="profile" title="profile" alt="profile" src="file:///D:/mini%20project/profile%20icon.png">
+        <input class="search" type="text" placeholder="Search or type a URL">
+        <button class="btn">Job Predictor</button>
+        <button class="btn1">Sign in</button>
+    </div>
+    <div class="container">
+        <section class="body">
+            <div class="notifications">
+                <button class="btn2">Notifications</button> <br>
+                <button class="btn3">Latest<br>Announcements</button><br>
+                <button class="btn4">Others</button>
+            </div>
+            <section class="allindia">
+                <div>
+                    <a href="file:///D:/mini%20project/aigj.html">
+                        <button class="btn5">All India Govt. Jobs</button>
+                    </a><br>
+                </div>
+                <div><button class="btn6">Bank Jobs</button><br></div>
+                <div><button class="btn7">Engineering Jobs</button><br></div>
+                <div><button class="btn8">Police/Defence Jobs</button></div>
+            </section>
+            <section class="allstate">
+                <div> <button class="btn9">State Govt. Jobs</button> <br></div>
+                <div> <button class="btn10">Teaching Jobs</button><br></div>
+                <div> <button class="btn11">Railway Jobs</button> <br></div>
+                <div> <button class="btn12">Education</button></div>
+            </section>
+            <div class="job">
+                <button class="btn13">Job Notifications</button> <br>
+                <button class="btn14">Admit Cards</button><br>
+                <button class="btn15">Results</button><br>
+                <button class="btn16">Education</button><br>
+                <button class="btn17">Answer Keys</button>
+            </div>
+        </section>
+        <div class="panel">
+            <div class="panel-heading">
+                <b>Related to News, Announcements and Advertisement:</b>
+            </div>
+            <div class="panel-body">
+                <marquee behavior="scroll" scrollamount="3" direction="up">
+                    <b>SSC CGL Recruitment 2022 - Apply Online for Combined Graduate Level Exam.
+                        <a style="color: rgb(4, 0, 223); text-decoration: none;"
+                            href="file:///D:/mini%20project/SSC%20CGL%202022.html">Get Details...</a><br>
+                        SBI CBO Recruitment 2021 - Apply Online for 1226 Vacancy <br>
+                        AFCAT (01/2022) 2021 - Apply Online for 317 Vacancy <br>
+                        CSIR UGC NET June 2021 - Apply Online for UCG National Eligibility Test <br>
+                        Indian Coast Guard Navik (DB, GD) & Yantrik 02/2022 - Apply Online for 322 Posts <br>
+                        CISF Head Constable (General Duty) Recruitment 2022 - 249 Vacancy <br>
+                        OSCB Asst Manager & Banking Asst Recruitment 2022 - Apply Online For 725 Vacancy <br>
+                        Central Bank of India Specialist Officer Recruitment 2021 - Apply Online for 214 Vacancy <br>
+                        RRC Level 1 Recruitment 2021 - Photo/Signature Modification Link Available <br>
+                    </b>
+                </marquee>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="disclaimer">Copyright © 2021 JoinRecruitingJob.com All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>

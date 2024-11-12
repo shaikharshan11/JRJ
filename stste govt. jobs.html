@@ -1,0 +1,2271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Govt. Jobs</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Lato:ital@1&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Lato:ital@1&family=Merriweather:wght@700;900&family=Zen+Antique&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+        .menu {
+            font-size: 22px;
+            background-color: #0c155a;
+            color: white;
+            margin: -22px -8px 0px -8px;
+            font-family: 'Cabin', sans-serif;
+        }
+
+        p {
+            padding: 10px 23px;
+        }
+
+        .logo-1 {
+            padding: 0px 20px;
+            margin: -22px 0px 30px 0px;
+            width: 9%;
+        }
+
+        .homeimg {
+            width: 20%;
+            float: right;
+            margin: -22px -8px 0px 0px;
+        }
+
+        .profilebar {
+            margin: 0px -8px;
+            background-color: #0c155a;
+            height: 70px;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile {
+            width: 50px;
+            padding: 10px 20px;
+        }
+
+        .search {
+            height: 28px;
+            width: 1033px;
+            padding: 0px 10px;
+            margin: 10px 0px;
+        }
+
+        .btn {
+            width: 175px;
+            height: 35px;
+            border: 0px;
+            margin: 0px 40px;
+            border-radius: 5px;
+            color: white;
+            background-image: linear-gradient(#39a7d6, #1a5db4, #0b1a91);
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-image: linear-gradient(#0b1a91, #0b1a91, #0b1a91);
+        }
+
+        .btn1 {
+            width: 100px;
+            height: 35px;
+            border: 0px;
+            border-radius: 5px;
+            margin: 0px 40px 0px 0px;
+            color: white;
+            background-image: linear-gradient(#39a7d6, #1a5db4, #0b1a91);
+            cursor: pointer;
+        }
+
+        .btn1:hover {
+            background-image: linear-gradient(#0b1a91, #0b1a91, #0b1a91);
+        }
+
+        .container {
+            background-size: 100%;
+            background-repeat: repeat;
+            background-position: center top;
+            margin: 0px -8px;
+            padding: 28px;
+        }
+
+        .body1 {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        .allindia {
+            margin: 0% 8.5% 0% 5%;
+            width: 25%;
+        }
+
+        .allstate {
+            margin: 0% 8.5% 0% 0%;
+            width: 25%;
+        }
+
+        .job {
+            margin: 0px;
+            width: 9%;
+        }
+
+        .btn5,
+        .btn6,
+        .btn7,
+        .btn8,
+        .btn9,
+        .btn10,
+        .btn11,
+        .btn12 {
+            height: 52px;
+            width: 100%;
+            text-align: center;
+            font-size: larger;
+            font-weight: 800;
+            border-radius: 0;
+            background-image: linear-gradient(#a3e8ec, #1990b4, #1990b4, #1990b4, #1990b4, #1990b4);
+            border: 0px;
+            color: white;
+            font-family: 'Merriweather', serif;
+            cursor: pointer;
+            margin-bottom: 6px;
+        }
+
+        .btn5:hover,
+        .btn6:hover,
+        .btn7:hover,
+        .btn8:hover,
+        .btn9:hover,
+        .btn10:hover,
+        .btn11:hover,
+        .btn12:hover {
+            background-image: linear-gradient(#3ad3db, #1990b4, #1990b4, #1990b4, #3ad3db);
+            font-size: 19px;
+        }
+
+        .btn13 {
+            border-radius: 0;
+            width: 100%;
+            height: 32px;
+            text-align: left;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .btn13:hover {
+            background-color: #e4a16a;
+            color: white;
+        }
+
+        .btn14 {
+            border-radius: 0;
+            width: 100%;
+            height: 32px;
+            text-align: left;
+            margin: -2px 0px 0px 0px;
+            cursor: pointer;
+        }
+
+        .btn14:hover {
+            background-color: #e4a16a;
+            color: white;
+        }
+
+        .btn15 {
+            width: 100%;
+            height: 32px;
+            text-align: left;
+            border-radius: 0;
+            margin: -2px 0px 0px 0px;
+            cursor: pointer;
+        }
+
+        .btn15:hover {
+            background-color: #e4a16a;
+            color: white;
+        }
+
+        .btn16 {
+            border-radius: 0;
+            width: 100%;
+            height: 32px;
+            text-align: left;
+            margin: -2px 0px 0px 0px;
+            cursor: pointer;
+        }
+
+        .btn16:hover {
+            background-color: #e4a16a;
+            color: white;
+        }
+
+        .btn17 {
+            width: 100%;
+            height: 32px;
+            text-align: left;
+            border-radius: 0;
+            margin: -2px 0px 0px 0px;
+            cursor: pointer;
+        }
+
+        .btn17:hover {
+            background-color: #e4a16a;
+            color: white;
+        }
+
+        .panel {
+            margin-top: 20px;
+            border: 8px;
+            border-color: #084ea8;
+        }
+
+        .panel-heading {
+            height: 28px;
+            width: 101%;
+            background-color: #9cbeebd0;
+            color: red;
+            font-style: italic;
+            padding-left: 8px;
+            margin-top: -16px;
+        }
+
+        .panel-body {
+            height: 182px;
+            width: 98.9%;
+            padding: 0px 12px 12px 12px;
+            background-image: linear-gradient(#9cbeebd0, #89b5eed0, #79aceed0, #609decd0, #4c92eed0, #3082eed0);
+        }
+
+        .footer {
+            height: 12vh;
+            width: 100%;
+            border-right-width: 10px;
+            padding-right: 16px;
+            margin: 0px 8px -8px -8px;
+            background-color: #0c155a;
+            color: white;
+            font-family: 'Lato', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .disclaimer {
+            width: 80%;
+            text-align: center;
+        }
+
+        .image2 {
+            display: none;
+        }
+
+        .upcs1 {
+            padding: 2px;
+            width: 790px;
+            color: #000000;
+            border: 2px;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+
+        .lattbl {
+            padding: 2px;
+            width: 790px;
+            color: #000000;
+            border: 2px solid #006699;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        tbody {
+            display: table-row-group;
+            vertical-align: middle;
+            border-color: inherit;
+        }
+
+        .lattra {
+            border: 1px solid #000000;
+            background-color: #adadad;
+            color: #800000;
+            width: 790px;
+        }
+
+        .latcaa,
+        .latcab,
+        .latcea,
+        .latceb,
+        .latcla,
+        .latclb,
+        .latcma,
+        .latcmb,
+        .latcpa,
+        .latcpb,
+        .latcqa,
+        .latcqb,
+        .latcr {
+            word-wrap: break-word;
+            font-size: 13px;
+            border: 1px solid #000000;
+        }
+
+        a:link {
+            font-family: Arial, Helvetica, Sans-Serif;
+            text-decoration: none;
+            color: #00F;
+        }
+
+        .latsec {
+            margin-bottom: 10px;
+            color: #000080;
+            font-weight: bold;
+        }
+
+
+        @media only screen and (max-width: 720px) {
+            .logo-1 {
+                display: none;
+            }
+
+            .homeimg {
+                display: none;
+            }
+
+            .image2 {
+                display: block;
+                width: 100%;
+                margin-top: -20px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <p>State Government Jobs</p>
+        </div>
+    </nav>
+    <div>
+        <img class="logo-1" title="Join Recruiting Job" alt="Join Recruiting Job"
+            src="file:///C:/Users/Mohammed%20Arshan/Downloads/jobrecruitingjob/jobrecruitingjob/Join%20Recruting%20Job.jpg">
+        <img src="file:///C:/Users/admin/Pictures/Saved%20Pictures/Homeimg%20phone.png" class="image2" />
+        <img class="homeimg" title="Latest Government Jobs" alt="Latest Government Jobs"
+            src="file:///C:/Users/Mohammed%20Arshan/Downloads/jobrecruitingjob/jobrecruitingjob/homeimg.jpg">
+        <div class="profilebar">
+            <img class="profile" title="profile" alt="profile" src="file:///C:/Users/Mohammed%20Arshan/Downloads/jobrecruitingjob/jobrecruitingjob/profile%20icon.png">
+            <input class="search" type="text" placeholder="Search or type a URL">
+            <button class="btn">Job Predictor</button>
+            <button class="btn1">Sign in</button>
+        </div>
+        <div class="container">
+            <section class="body1">
+                <table style="text-align: center; color: #f5d0a9; font-size: 14px; font-weight: bold;" border="5"
+                    bgcolor="#d8f6ce">
+                    <tbody>
+                        <tr>
+                            <td><a title="Andaman &amp; Nicobar Jobs" href="#Andaman">Andaman &amp; Nicobar </a>
+                            </td>
+                            <td><a title="Andhra Pradesh Jobs"
+                                    href="#anp">Andhra Pradesh</a></td>
+                            <td><a title="Arunachal Pradesh Jobs"
+                                    href="#arp">Arunachal
+                                    Pradesh</a></td>
+                            <td><a title="Assam Jobs"
+                                    href="#as">Assam</a></td>
+                            <td><a title="Bihar Jobs"
+                                    href="#bi">Bihar</a></td>
+                            <td><a title="Chandigarh Jobs"
+                                    href="#ch">Chandigarh</a></td>
+                            <td><a title="Chhattisgarh Jobs"
+                                    href="#chh">Chhattisgarh</a>
+                            </td>
+                            <td><a title="Dadra &amp; Nagar Haveli Jobs"
+                                    href="#dnh">Dadra &amp;
+                                    Nagar Haveli</a></td>
+                            <td><a title="Daman &amp; Diu Jobs"
+                                    href="#dd">Daman &amp; Diu</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a title="Delhi Jobs"
+                                    href="#dl">Delhi</a></td>
+                            <td><a title="Goa Jobs" href="#goa">Goa</a>
+                            </td>
+                            <td><a title="Gujarat Jobs"
+                                    href="#gj">Gujarat</a></td>
+                            <td><a title="Haryana Jobs"
+                                    href="#hy">Haryana</a></td>
+                            <td><a title="Himachal Pradesh Jobs"
+                                    href="#hp">Himachal Pradesh</a></td>
+                            <td><a title="Jammu &amp; Kashmir Jobs"
+                                    href="#jk">Jammu &amp; Kashmir</a></td>
+                            <td><a title="Jharkhand Jobs"
+                                    href="#jh">Jharkhand</a></td>
+                            <td><a title="Karnataka Jobs"
+                                    href="#kt">Karnataka</a></td>
+                            <td><a title="Kerala Jobs"
+                                    href="#kl">Kerala</a></td>
+                        </tr>
+                        <tr>
+                            <td><a title="Lakshadweep Jobs"
+                                    href="#lak">Lakshadweep</a>
+                            </td>
+                            <td><a title="Madhya Pradesh Jobs"
+                                    href="#mp">Madhya Pradesh</a></td>
+                            <td><a title="Maharashtra Jobs"
+                                    href="#mh">Maharashtra</a>
+                            </td>
+                            <td><a title="Manipur Jobs"
+                                    href="https://www.freejobalert.com/manipur-government-jobs/">Manipur</a></td>
+                            <td><a title="Meghalaya Jobs"
+                                    href="https://www.freejobalert.com/meghalaya-government-jobs/">Meghalaya</a></td>
+                            <td><a title="Mizoram Jobs"
+                                    href="https://www.freejobalert.com/mizoram-government-jobs/">Mizoram</a></td>
+                            <td><a title="Nagaland Jobs"
+                                    href="https://www.freejobalert.com/nagaland-government-jobs/">Nagaland</a></td>
+                            <td><a title="Odisha Jobs"
+                                    href="https://www.freejobalert.com/odisha-government-jobs/">Odisha</a></td>
+                            <td><a title="Puduchhery Jobs"
+                                    href="https://www.freejobalert.com/puduchhery-government-jobs/">Puduchhery</a></td>
+                        </tr>
+                        <tr>
+                            <td><a title="Punjab Jobs"
+                                    href="https://www.freejobalert.com/punjab-government-jobs/">Punjab</a></td>
+                            <td><a title="Rajasthan Jobs"
+                                    href="https://www.freejobalert.com/rajasthan-government-jobs/">Rajasthan</a></td>
+                            <td><a title="Sikkim Jobs"
+                                    href="https://www.freejobalert.com/sikkim-government-jobs/">Sikkim</a></td>
+                            <td><a title="Tamil Nadu Jobs" href="https://www.freejobalert.com/tn-government-jobs/">Tamil
+                                    Nadu</a></td>
+                            <td><a title="Telangana Jobs"
+                                    href="https://www.freejobalert.com/telangana-government-jobs/">Telangana</a></td>
+                            <td><a title="Tripura Jobs"
+                                    href="https://www.freejobalert.com/tripura-government-jobs/">Tripura</a></td>
+                            <td><a title="Uttarakhand Jobs"
+                                    href="https://www.freejobalert.com/uttarakhand-government-jobs/">Uttarakhand</a>
+                            </td>
+                            <td><a title="Uttar Pradesh Jobs"
+                                    href="https://www.freejobalert.com/up-government-jobs/">Uttar Pradesh</a></td>
+                            <td><a title="West Bengal Jobs" href="https://www.freejobalert.com/wb-government-jobs/">West
+                                    Bengal</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+            <div>
+                <a name="Andaman">
+                    <h3 class="latsec"> Andaman and Nicobar Islands </h3>
+                </a>
+            </div>
+            <table class="lattbl">
+                <tbody>
+                    <tr class="lattra">
+                        <th class="latcpb">Post Date</th>
+                        <th class="latcr">Recruitment Board</th>
+                        <th class="latceb">Post Name</th>
+                        <th class="latcqb">Qualification</th>
+                        <th class="latcab">Advt No</th>
+                        <th class="latclb">Last Date</th>
+                        <th class="latcmb">More Information</th>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">04/04/2022</td>
+                        <td class="latcr">DHS, Andaman and Nicobar</td>
+                        <td class="latceb">Medical Officer &amp; Dental Surgeon – 9 Posts</td>
+                        <td class="latcqb">Degree (Relevant Disciplines)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">14-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.andaman.gov.in/admin-pannel/whatsnew/1-364-GDMO%20Recruitment%202022.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">16/03/2022</td>
+                        <td class="latcr">Indian Coast Guard</td>
+                        <td class="latceb">Engine Driver, Satang Lascar, Lascar Class I – 16 Posts</td>
+                        <td class="latcqb">Matriculation</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">30 Days (11–04-2022)</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.indiancoastguard.gov.in/WriteReadData/Orders/202203150736154496143avertisement.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">12/03/2022</td>
+                        <td class="latcr">Headquarters Coast Guard Region Port Blair</td>
+                        <td class="latceb">Engine Driver, Sarang Lascar, Lascar Ist Class – 16 Posts</td>
+                        <td class="latcqb">Not Menctioned</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">30 Days (11–04-2022)</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://img.freejobalert.com/uploads/2022/03/Notification-Headquarters-Coast-Guard-Region-Port-Blair-Engine-Driver-Vacancy.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a name="anp">
+                    <h3 class="latsec"> Andhra Pradesh </h3>
+                </a>
+            </div>
+            <table class="lattbl">
+                <tbody>
+                    <tr class="lattra">
+                        <th class="latcpb">Post Date</th>
+                        <th class="latcr">Recruitment Board</th>
+                        <th class="latceb">Post Name</th>
+                        <th class="latcqb">Qualification</th>
+                        <th class="latcab">Advt No</th>
+                        <th class="latclb">Last Date</th>
+                        <th class="latcmb">More Information</th>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">06/04/2022</td>
+                        <td class="latcr">Damodar Vally Corporation</td>
+                        <td class="latceb">Dental Surgeon, Physiotherapist, Jrt Nursing Staff &amp; Other – 63 Posts
+                        </td>
+                        <td class="latcqb">Higher Secondary, 10+2, Diploma, Degree (Relevant Disciplines)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">08-4-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://img.freejobalert.com/uploads/2022/04/Notification-DVC-Dental-Surgeon-Physiotherapist-Jrt-Nursing-Staff-Other.jpg"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">05/04/2022</td>
+                        <td class="latcr">Sri Venkateswara University</td>
+                        <td class="latceb">Jr Asst, Work Inspector, Ayah, Watchman &amp; Other – 10 Posts</td>
+                        <td class="latcqb">5th, 7th, 8th, SSLC, Degree ( Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">30-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://svuniversity.edu.in/wp-content/uploads/2022/03/Special-Recruitment-Drive-for-filling-up-vacancies-Reserved-for-Disabled-Persons.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">05/04/2022</td>
+                        <td class="latcr">APSLSA</td>
+                        <td class="latceb">Other Person – 6 Posts</td>
+                        <td class="latcqb">Any Degree</td>
+                        <td class="latcab">02/2022</td>
+                        <td class="latclb">21 Days (14-04-2022)</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://districts.ecourts.gov.in/sites/default/files/APSLSANotice2of2022.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">05/04/2022</td>
+                        <td class="latcr">Sainik School, kalikiri</td>
+                        <td class="latceb">PGT, SMO, PTI-cum-Matron &amp; Other – 11 Posts</td>
+                        <td class="latcqb">10+2, Degree, PG (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">22-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://sskal.ac.in/public/careers/ACADEMIC%20&amp;%20ADMIN%20STAFF%20REQUIRED.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">04/04/2022</td>
+                        <td class="latcr">GGH, Ananthapuramu</td>
+                        <td class="latceb">Perfunsionist, Radiographer, MRI Technician &amp; Other – 12 Posts</td>
+                        <td class="latcqb">10th Class, Diploma, Degree, PG (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">05-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s333e8075e9970de0cfea955afd4644bb2/uploads/2022/04/2022040166.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">04/04/2022</td>
+                        <td class="latcr">DHFWS, Vizag</td>
+                        <td class="latceb">Aarogya Mitra, Team Leaders – 32 Posts</td>
+                        <td class="latcqb">Degree, PG (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">07-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s32d6cc4b2d139a53512fb8cbb3086ae2e/uploads/2022/03/20220331100.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">04/04/2022</td>
+                        <td class="latcr">DCHS, Nandyal</td>
+                        <td class="latceb">Theatre Asst, Lab Technician, Post Mortum Asst &amp; Other – 5 Posts</td>
+                        <td class="latcqb">10th Class, Degree, PG (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">07-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s37f24d240521d99071c93af3917215ef7/uploads/2022/03/2022033150.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">04/04/2022</td>
+                        <td class="latcr">DCHS, Nandyal</td>
+                        <td class="latceb">Radiographer, Theatre Asst, Counsellor, Plumber &amp; Other – 17 Posts</td>
+                        <td class="latcqb">10th Class, ITI, Diploma, Degree (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">07-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s37f24d240521d99071c93af3917215ef7/uploads/2022/03/2022033127.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">01/04/2022</td>
+                        <td class="latcr">APVVP, Prakasam</td>
+                        <td class="latceb">Lab Attendant, Counselor &amp; Other – 15 Posts</td>
+                        <td class="latcqb">10+2, ITI, Degree (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">07-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s3f3f27a324736617f20abbf2ffd806f6d/uploads/2022/03/2022033179.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">01/04/2022</td>
+                        <td class="latcr">DCHS, Nellore</td>
+                        <td class="latceb">Radiographer, Theatre Assistant, Post Mortum Assistant &amp; Other – 20 Posts
+                        </td>
+                        <td class="latcqb">–</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">08-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s39c82c7143c102b71c593d98d96093fde/uploads/2022/03/2022033136.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">31/03/2022</td>
+                        <td class="latcr">Collector Office, Ongole</td>
+                        <td class="latceb">Junior Asst, Attender, Lab Attender &amp; Other – 7 Posts</td>
+                        <td class="latcqb">5th, 7th, 10th Class, Any Degree</td>
+                        <td class="latcab">01/2022</td>
+                        <td class="latclb">12-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s3f3f27a324736617f20abbf2ffd806f6d/uploads/2022/03/2022032957.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">31/03/2022</td>
+                        <td class="latcr">TTD</td>
+                        <td class="latceb">Farm Manager, Goshala Manager &amp; Other – 9 Posts</td>
+                        <td class="latcqb">SSC, Any Degree</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">11-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.apcareers.in/wp-content/uploads/2022/03/TTD-09-Farm-Manager-Compounder-Vety-Posts-Notification-Application-Form.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">30/03/2022</td>
+                        <td class="latcr">APVVP, Vizianagaram</td>
+                        <td class="latceb">Lab Technician, Electrician, Dental Technician &amp; Other – 17 Posts</td>
+                        <td class="latcqb">10th Class, Degree, PG (Relevant Discipline)</td>
+                        <td class="latcab">01/2022</td>
+                        <td class="latclb">04-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s3cee631121c2ec9232f3a2f028ad5c89b/uploads/2022/03/2022032938.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">29/03/2022</td>
+                        <td class="latcr">Collector Office, Krishna</td>
+                        <td class="latceb">Fitter Bed Operator, Office Subordinate, Sweeper – 6 Posts</td>
+                        <td class="latcqb">–</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">15 Days</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s3c399862d3b9d6b76c8436e924a68c45b/uploads/2022/03/2022032878.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">29/03/2022</td>
+                        <td class="latcr">APVVP, West Godavari</td>
+                        <td class="latceb">Audiometric Technician, Post Moterm Asst, Opthalmic Asst – 5 Posts</td>
+                        <td class="latcqb">10+2, Degree (Relevant disciplines)</td>
+                        <td class="latcab">06/2022</td>
+                        <td class="latclb">06-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s381448138f5f163ccdba4acc69819f280/uploads/2022/03/2022032752.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">25/03/2022</td>
+                        <td class="latcr">Govt General Hospital, Ongole</td>
+                        <td class="latceb">Perfusionist, MRI Technician, CT Technician &amp; Other – 14 Posts</td>
+                        <td class="latcqb">Intermediate, Diploma/ Degree (Relevant Discipline)</td>
+                        <td class="latcab">10/2022</td>
+                        <td class="latclb">04-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s3f3f27a324736617f20abbf2ffd806f6d/uploads/2022/03/2022032485.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">19/03/2022</td>
+                        <td class="latcr">APPSC</td>
+                        <td class="latceb">Group II Exam 2022 – 182 Posts</td>
+                        <td class="latcqb">–</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">–</td>
+                        <td class="latcmb"><strong><a href="https://www.freejobalert.com/appsc-notification/12105/"
+                                    target="_blank" rel="noopener">Get Details</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">19/03/2022</td>
+                        <td class="latcr">APPSC</td>
+                        <td class="latceb">Group I Exam 2022 – 110 Posts</td>
+                        <td class="latcqb">–</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">–</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.freejobalert.com/appsc-notification/12105/#Group-I-2022"
+                                    target="_blank" rel="noopener">Get Details</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">17/03/2022</td>
+                        <td class="latcr">Aiims, Mangalagiri</td>
+                        <td class="latceb">Tutor/ Clinical Instructor – 17 Posts</td>
+                        <td class="latcqb">B,Sc (Nursing)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">30 Days</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.aiimsmangalagiri.edu.in/wp-content/uploads/2022/03/AIIMS-Mangalagiri-RECRUITMENT-OF-%E2%80%98TUTOR-CLINICAL-INSTRUCTOR%E2%80%99-FOR-COLLEGE-OF-NURSING.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">03/03/2022</td>
+                        <td class="latcr">Hindustan Shipyard Limited</td>
+                        <td class="latceb">General Manager, Project Officer, Dy. Project Officer &amp; Other – 26 Posts
+                        </td>
+                        <td class="latcqb">Degree, PG (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">24-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.hslvizag.in/WriteReadData/userfiles/file/Recruitment/2022_03_02_Recruitment_Advt_16_positions.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a name="arp">
+                    <h3 class="latsec"> Arunachal Pradesh </h3>
+                </a>
+            </div>
+            <table class="lattbl">
+                <tbody>
+                    <tr class="lattra">
+                        <th class="latcpb">Post Date</th>
+                        <th class="latcr">Recruitment Board</th>
+                        <th class="latceb">Post Name</th>
+                        <th class="latcqb">Qualification</th>
+                        <th class="latcab">Advt No</th>
+                        <th class="latclb">Last Date</th>
+                        <th class="latcmb">More Information</th>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">25/03/2022</td>
+                        <td class="latcr">Arunachal Pradesh PSC</td>
+                        <td class="latceb">Research Assistant – 10 Posts</td>
+                        <td class="latcqb">.</td>
+                        <td class="latcab">17/2021</td>
+                        <td class="latclb">24-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://appsc.gov.in/upload/P589400_RECINS001/Advertisement_Research_Assistant.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a name="as">
+                    <h3 class="latsec"> Assam
+                    </h3>
+                </a>
+            </div>
+            <table class="lattbl">
+                <tbody>
+                    <tr class="lattra">
+                        <th class="latcpb">Post Date</th>
+                        <th class="latcr">Recruitment Board</th>
+                        <th class="latceb">Post Name</th>
+                        <th class="latcqb">Qualification</th>
+                        <th class="latcab">Advt No</th>
+                        <th class="latclb">Last Date</th>
+                        <th class="latcmb">More Information</th>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">06/04/2022</td>
+                        <td class="latcr">Dibrugarh university</td>
+                        <td class="latceb">JRF, SRF, Technical Asst – 5 Posts</td>
+                        <td class="latcqb">Diploma, Degree, PG (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">12-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://dibru.ac.in/2022/03/17/advertisement-for-temporary-positions-under-various-research-projects1/"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">06/04/2022</td>
+                        <td class="latcr">SSA, Mankachar</td>
+                        <td class="latceb">Head Teacher, Full/ Part Time Asst Teacher &amp; Accounts Asst cum Care Taker
+                            – 15 Posts</td>
+                        <td class="latcqb">Degree, PG (Relevant Disciplines)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">19-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://img.freejobalert.com/uploads/2022/04/Notification-SSA-Mankachar-Teacher-Posts.png"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">05/04/2022</td>
+                        <td class="latcr">NEHU</td>
+                        <td class="latceb">Dy Registrar, Asst Registrar – 5 Posts</td>
+                        <td class="latcqb">PG (Relevant Disicpline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">18-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://nehu.ac.in/public/assets/files/advertisements/Advertisement-for-AR-and-DR-2022.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">05/04/2022</td>
+                        <td class="latcr">ARIES</td>
+                        <td class="latceb">Chief Financial Manager, Seed Coordinators, Accounts Executive &amp; Other –
+                            12 Posts</td>
+                        <td class="latcqb">Diploma, Degree, PG/ CA</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">12-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="http://www.arias.in/download/APART/Long%20REoI-%20under%20APART%20-%2031.03.2022.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">05/04/2022</td>
+                        <td class="latcr">Battadev University</td>
+                        <td class="latceb">Teaching Assistant – 23 Posts</td>
+                        <td class="latcqb">Ph.D/ NET/ SLET</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">10 &amp; 11-04-2022 — Walk in</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.bhattadevuniversity.ac.in/docs/notifications/Advertisement_(_Walk-in_Interview)_for_University_Website.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">31/03/2022</td>
+                        <td class="latcr">AS CFMS</td>
+                        <td class="latceb">Project Manager, Additional Project Manager &amp; Other – 7 Posts</td>
+                        <td class="latcqb">Degree, PG (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">17-04-2022</td>
+                        <td class="latcmb"><strong><a href="https://finance.assam.gov.in/portlets/as-cfms"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">30/03/2022</td>
+                        <td class="latcr">Assam financial corporation</td>
+                        <td class="latceb">Junior Asst, Messenger – 10 Posts</td>
+                        <td class="latcqb">12th, B.Sc/ BA/ B.Com</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">30-04-2022</td>
+                        <td class="latcmb"><strong><a href="http://www.afconline.gov.in/document/AFC%20ADVT-2.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">28/03/2022</td>
+                        <td class="latcr">Assam Rifles</td>
+                        <td class="latceb">Rifleman/ Riflewoman (GD) – 104 Posts</td>
+                        <td class="latcqb">Matriculation</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">30-04-2022</td>
+                        <td class="latcmb"><strong><a href="https://www.assamrifles.gov.in/DOCS/NEWS/RALLY62.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">28/03/2022</td>
+                        <td class="latcr">Assam Direct Recruitment Commission</td>
+                        <td class="latceb">Class III &amp; Class IV – 13141 Posts</td>
+                        <td class="latcqb">HSLC, Degree (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">30-05-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ-F4-jKiiNJgsukJNLsWltLdK0NgMWpR3JjGu4P3d3yS11_ErBhQBh2Nfiitmal5L6kQHfIJiFmboLYtwOMMMegeZo3twCAbhdvp_ih4o6HkSQNUDgbA2ClmSBksJA-p34iDtpUV3b_MGntTnd6BotmC2yFVvEibXhcDhOQl2_WXIRqbjP6EhbBS4/s2389/Grade%20III.png"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">28/03/2022</td>
+                        <td class="latcr">Assam Direct Recruitment Commission</td>
+                        <td class="latceb">Class IV – 13300 Posts</td>
+                        <td class="latcqb">8th Class, HSLC</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">30-05-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlrFtdLF6iAEMORFohhB4Y08R8Rfo9VQgeZ74cMbgHkfitqWzUanEQJsPip_IonqXzQg5cs0QOOdKx5pJIqMdanfEYkAK-gD1BfY3QPwV-DPBSVKczLSZ1ToV69tM9CjcU2dfPQMY7hRpZq5VokWkJYYioeZh65x3aCwJ4fIYtqPj8tq15kBcLDtjV/s2389/Grade%20IV.png"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">25/03/2022</td>
+                        <td class="latcr">Directorate of Sports &amp; Youth Welfare, Assam</td>
+                        <td class="latceb">Sub Divisional Sports Officer, Physical Instructor, Coach – 177 Posts</td>
+                        <td class="latcqb">Diploma/ Degree/ B.P.E (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">11-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://dsyw.assam.gov.in/sites/default/files/swf_utility_folder/departments/dsyw_medhassu_in_oid_4/latest/advertisement.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">22/03/2022</td>
+                        <td class="latcr">Directorate of Dairy Development, Assam</td>
+                        <td class="latceb">Lab Manager – 5 Posts</td>
+                        <td class="latcqb">PG (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">30 Days</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://dairy.assam.gov.in/sites/default/files/swf_utility_folder/departments/diarydev_webcomindia_org_oid_7/menu/document/tor_for_lab_manager_under_apart.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">19/03/2022</td>
+                        <td class="latcr">NEIST, Assam</td>
+                        <td class="latceb">Scientist – 11 Posts</td>
+                        <td class="latcqb">Degree, PG (Relevant Disciplines)</td>
+                        <td class="latcab">01/2022</td>
+                        <td class="latclb">21-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.rrljorhat.res.in/jobs/ADVT-Scientist-English.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">17/03/2022</td>
+                        <td class="latcr">Army Institute of Nursing, Guwahati</td>
+                        <td class="latceb">Asst Professor, Tutor, Clerk &amp; Other – 14 Posts</td>
+                        <td class="latcqb">10th Class, ITI, Degree, PG (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">08-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://ainguwahati.org/wp-content/uploads/2022/03/Detail-Advt-For-various-Teaching-Non-Teaching-Posts-1.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">16/03/2022</td>
+                        <td class="latcr">WAMUL</td>
+                        <td class="latceb">Executive, Asst, Veterinary Executive – 13 Posts</td>
+                        <td class="latcqb">Degree, PG (Relevant Disciplines)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">23 to 04-04-2022 – Walk in</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.purabi.org/download_file.php?job_id=109&amp;job_pdf_id=541"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">28/02/2022</td>
+                        <td class="latcr">Assam University</td>
+                        <td class="latceb">Professor, Associate Professor, Asst Professor – 42 Posts</td>
+                        <td class="latcqb">As Per UGC Regulations</td>
+                        <td class="latcab">01/2022</td>
+                        <td class="latclb">11-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="http://www.aus.ac.in/wp-content/uploads/2022/02/Adv-No.-1-2022-Total-1_compressed.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">15/02/2022</td>
+                        <td class="latcr">Assam Police</td>
+                        <td class="latceb">Constable, Asst Squad Commander, Driver – 557 Posts</td>
+                        <td class="latcqb">VIII Class, HSSLC/ HSLC/ XII Class, ITI (Relevant Trade)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">17-03-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.freejobalert.com/assam-police-constable-squad-commander-driver-2022/960181/"
+                                    target="_blank" rel="noopener">Get Details</a></strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a name="bi">
+                    <h3 class="latsec"> Bihar </h3>
+                </a>
+            </div>
+            <table class="lattbl">
+                <tbody>
+                    <tr class="lattra">
+                        <th class="latcpb">Post Date</th>
+                        <th class="latcr">Recruitment Board</th>
+                        <th class="latceb">Post Name</th>
+                        <th class="latcqb">Qualification</th>
+                        <th class="latcab">Advt No</th>
+                        <th class="latclb">Last Date</th>
+                        <th class="latcmb">More Information</th>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">06/04/2022</td>
+                        <td class="latcr">TMC</td>
+                        <td class="latceb">Asst Medical Social Worker, Pharmacist, Technician &amp; Other – 14 Posts
+                        </td>
+                        <td class="latcqb">10+2; Degree, PG (Relevant Discipline), GNM</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">19-04-2022 – Walk in</td>
+                        <td class="latcmb"><strong><a href="https://tmc.gov.in/m_events/Events/JobDetail?jobId=9467"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">24/03/2022</td>
+                        <td class="latcr">BPSC</td>
+                        <td class="latceb">Head Teacher – 40506 Posts</td>
+                        <td class="latcqb">Degree (Relevant discipline), D.El.Ed/ B.T/ B.Ed./ B.A.Ed</td>
+                        <td class="latcab">004/2022</td>
+                        <td class="latclb">22-04-2022</td>
+                        <td class="latcmb"><strong><a href="https://www.freejobalert.com/bpsc/22553/#Head-Master"
+                                    target="_blank" rel="noopener">Get Details</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">23/03/2022</td>
+                        <td class="latcr">IIT, Patna</td>
+                        <td class="latceb">Intern – 10 Posts</td>
+                        <td class="latcqb">Degree (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">05-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.iitp.ac.in/images/pdf/Internship-Notification.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">18/03/2022</td>
+                        <td class="latcr">Patna High Court</td>
+                        <td class="latceb">Computer Operator-cum-Typist – 30 Posts</td>
+                        <td class="latcqb">Any Degree</td>
+                        <td class="latcab">02/2022</td>
+                        <td class="latclb">07-04-2022</td>
+                        <td class="latcmb"><strong><a href="http://patnahighcourt.gov.in/Exam/COT-2022.PDF"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">12/03/2022</td>
+                        <td class="latcr">BPSC</td>
+                        <td class="latceb">Asst Town Planning Supervisor – 107 Posts</td>
+                        <td class="latcqb">Degree (Planning)/ PG Diploma (Remote Sensing &amp; GIS )</td>
+                        <td class="latcab">03/2021</td>
+                        <td class="latclb">06-04-2022</td>
+                        <td class="latcmb"><strong><a href="https://www.freejobalert.com/bpsc/22553/#Supervisor"
+                                    target="_blank" rel="noopener">Get Details</a></strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a name="ch">
+                    <h3 class="latsec"> Chandigarh </h3>
+                </a>
+            </div>
+            <table class="lattbl">
+                <tbody>
+                    <tr class="lattra">
+                        <th class="latcpb">Post Date</th>
+                        <th class="latcr">Recruitment Board</th>
+                        <th class="latceb">Post Name</th>
+                        <th class="latcqb">Qualification</th>
+                        <th class="latcab">Advt No</th>
+                        <th class="latclb">Last Date</th>
+                        <th class="latcmb">More Information</th>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">06/04/2022</td>
+                        <td class="latcr">NHM, Chandigarh</td>
+                        <td class="latceb">Pediatrician, Gynaecologist, ENT Specialist – 5 Posts</td>
+                        <td class="latcqb">MBBS with MD/ MS/DNB</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">11-04-2022 – Walk in</td>
+                        <td class="latcmb"><strong><a
+                                    href="http://nrhmchd.gov.in/sites/default/files/Advertisment%20Health%20Deptt.%20for%20Website%20%28Interview-11th%20April%202022%29.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">06/04/2022</td>
+                        <td class="latcr">NHM, Chandigarh</td>
+                        <td class="latceb">Medical Officer – 9 Posts</td>
+                        <td class="latcqb">MBBS</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">08-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="http://nrhmchd.gov.in/sites/default/files/Advt%20for%20Website%208th%20April%20%202022.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">01/04/2022</td>
+                        <td class="latcr">ESIC Model hospital, Chandigarh</td>
+                        <td class="latceb">Full Time/Part Time Specialist, Senior Resident &amp; Other – 11 Posts</td>
+                        <td class="latcqb">MBBS, PG Degree/ Diploma (Concerned Speciality)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">20-04-2022 — Walk in</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.esic.nic.in/attachments/recruitmentfile/7d78e318c0e88467ce71ab18f35a4b65.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">29/03/2022</td>
+                        <td class="latcr">DRDO-TBRL</td>
+                        <td class="latceb">Research Associate, JRF – 8 Posts</td>
+                        <td class="latcqb">Degree, PG, Ph.D (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">15-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="http://www.davp.nic.in/WriteReadData/ADS/eng_10301_166_2122b.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">25/03/2022</td>
+                        <td class="latcr">Panjab University</td>
+                        <td class="latceb">Intern – 7 Posts</td>
+                        <td class="latcqb">BE/ B.Tech</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">04-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://jobs.puchd.ac.in/includes/jobs/2022/20220324145148-Advertisement%20of%20Interns%20.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">18/03/2022</td>
+                        <td class="latcr">NITTR, Chandigarh</td>
+                        <td class="latceb">Project Asst/ Project Associate – 10 Posts</td>
+                        <td class="latcqb">Diploma (Engg), PG (Relevant Disciplines)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">06-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="http://www.nitttrchd.ac.in/sitenew1/pdf/jobs/2022/HPSDMA%20adv%2017%20March%202022.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a name="chh">
+                    <h3 class="latsec"> Chhattisgarh </h3>
+                </a>
+            </div>
+            <table class="lattbl">
+                <tbody>
+                    <tr class="lattra">
+                        <th class="latcpb">Post Date</th>
+                        <th class="latcr">Recruitment Board</th>
+                        <th class="latceb">Post Name</th>
+                        <th class="latcqb">Qualification</th>
+                        <th class="latcab">Advt No</th>
+                        <th class="latclb">Last Date</th>
+                        <th class="latcmb">More Information</th>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">05/04/2022</td>
+                        <td class="latcr">CMHO, Korea</td>
+                        <td class="latceb">Rural Self Co Ordinator, Peon &amp; Other – 32 Posts</td>
+                        <td class="latcqb">10+2, Diploma</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">20-04-2022</td>
+                        <td class="latcmb"><strong><a href="https://jssbsurguja.cgstate.gov.in/cms/media/CMHOKORIYA.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">05/04/2022</td>
+                        <td class="latcr">CMHO, Jashpur</td>
+                        <td class="latceb">Lab Asst, Ward Ayah, Chowkidar &amp; Other – 144 Posts</td>
+                        <td class="latcqb">8th Class, 10th Class, 10+2, Degree (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">20-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://jssbsurguja.cgstate.gov.in/cms/media/CMHOJASHPUR.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">05/04/2022</td>
+                        <td class="latcr">CMHO, Surguja</td>
+                        <td class="latceb">Lab Asst, Dresser Gr-II – 58 Posts</td>
+                        <td class="latcqb">10th Class, 10+2</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">20-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://jssbsurguja.cgstate.gov.in/cms/media/CMHOSURGUJA.pdf.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">05/04/2022</td>
+                        <td class="latcr">CMHO, Surguja</td>
+                        <td class="latceb">Staff Nurse, Radiographer &amp; Other – 174 Posts</td>
+                        <td class="latcqb">10th Class, 10+2, B.sc (Nursing)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">20-04-2022</td>
+                        <td class="latcmb"><strong><a href="https://jssbsurguja.cgstate.gov.in/cms/media/JDSURGUJA.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">04/04/2022</td>
+                        <td class="latcr">CMHO, Surguja</td>
+                        <td class="latceb">Pharmacist, Ward Ayah, Chowkidar &amp; Other – 96 Posts</td>
+                        <td class="latcqb">10th Class, 10+2, Degree (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">20-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://jssbsurguja.cgstate.gov.in/cms/media/CMHOSURAJPUR.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">04/04/2022</td>
+                        <td class="latcr">CMHO, Surguja</td>
+                        <td class="latceb">Ward Boy, Ward Aaya, Peon, Chowkidar &amp; other – 292 Posts</td>
+                        <td class="latcqb">4th Class</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">20-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://jssbsurguja.cgstate.gov.in/cms/media/AdvertisementGrade4Surguja.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">04/04/2022</td>
+                        <td class="latcr">DHS, Raipur</td>
+                        <td class="latceb">Staff Nurse &amp; Radiographer – 191 Posts</td>
+                        <td class="latcqb">12th Class, B.Sc, P.B.Sc</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">18-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="http://cghealth.nic.in/ehealth/2022/DHS/DHSStaffNurse_SansodhitVigyapan_29032022.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">04/04/2022</td>
+                        <td class="latcr">SAIL</td>
+                        <td class="latceb">Super Specialis, Specialist, GDMO &amp; Other – 7 Posts</td>
+                        <td class="latcqb">MBBS, PG Degree/ Diploma (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">09-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://ucanapplym.s3.ap-south-1.amazonaws.com/sail/pdf/Detailed%20Advertisement%20for%20uploading%20in%20sailcareer.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">01/04/2022</td>
+                        <td class="latcr">District and Sessions Judge, Bemetara</td>
+                        <td class="latceb">Quick Writer, Asst Gr – III – 30 Posts</td>
+                        <td class="latcqb">Degree (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">30-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s36a10bbd480e4c5573d8f3af73ae0454b/uploads/2022/03/2022033029.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">01/04/2022</td>
+                        <td class="latcr">NHM, Bemetara</td>
+                        <td class="latceb">Sr. Nursing Officer, Psychologist &amp; Other – 17 Posts</td>
+                        <td class="latcqb">10+2, Diploma, Degree, PG (Relevant disciplines), GNM, MSW, PGDCA</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">05-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s36a10bbd480e4c5573d8f3af73ae0454b/uploads/2022/03/2022032572.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">01/04/2022</td>
+                        <td class="latcr">CMHO Balrampur</td>
+                        <td class="latceb">Staff Nurse, Radiographer – 174 Posts</td>
+                        <td class="latcqb">–</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">20-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://jssbsurguja.cgstate.gov.in/cms/media/AdvertisementGrade3Surguja.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">31/03/2022</td>
+                        <td class="latcr">SECL</td>
+                        <td class="latceb">Surface Miner Operator – 17 Posts</td>
+                        <td class="latcqb">Matriculation</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">06-04-2022</td>
+                        <td class="latcmb"><strong><a href="http://www.secl-cil.in/writereaddata/833YR16032022.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">30/03/2022</td>
+                        <td class="latcr">Collector &amp; District Magistrate, Korba</td>
+                        <td class="latceb">Stenographer, Assitsnt Gr III – 6 Posts</td>
+                        <td class="latcqb">BCA</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">30-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s3d2ddea18f00665ce8623e36bd4e3c7c5/uploads/2022/03/2022032936.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">30/03/2022</td>
+                        <td class="latcr">CMHO, Balrampur</td>
+                        <td class="latceb">Chowkidar, Cook, Ward Ayah, Sweeper &amp; Other – 117 Posts</td>
+                        <td class="latcqb">8th Class, 10th, 12th Class</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">20-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s326dd0dbc6e3f4c8043749885523d6a25/uploads/2022/03/2022032923.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">29/03/2022</td>
+                        <td class="latcr">CMHO, Bastar</td>
+                        <td class="latceb">Nephrologist, Dialysis Technician, CT Technician – 9 Posts</td>
+                        <td class="latcqb">12th Class, Diploma, MBBS, PG Degree, Diploma</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">12-04-2022 – Walk in</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s324681928425f5a9133504de568f5f6df/uploads/2022/03/2022032562.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">29/03/2022</td>
+                        <td class="latcr">CGPSC</td>
+                        <td class="latceb">Specialist Doctor – 5 Posts</td>
+                        <td class="latcqb">MBBS</td>
+                        <td class="latcab">17/2022</td>
+                        <td class="latclb">30-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://psc.cg.gov.in/pdf/Advertisement/ADV_VC_2022_25032022.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">29/03/2022</td>
+                        <td class="latcr">CGPSC</td>
+                        <td class="latceb">Homeopathic Medical Officer – 20 Posts</td>
+                        <td class="latcqb">Diploma, Degree (Relevant Discipline)</td>
+                        <td class="latcab">16/2022</td>
+                        <td class="latclb">30-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://psc.cg.gov.in/pdf/Advertisement/ADV_HMO_2022_25032022.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">25/03/2022</td>
+                        <td class="latcr">CMHO, Kabirdham</td>
+                        <td class="latceb">Staff Nurse, MPW &amp; Other – 16 Posts</td>
+                        <td class="latcqb">10+2, Diploma, B.Sc Nursing/ Post Basic B.sc Nursing, GNM</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">19-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s328dd2c7955ce926456240b2ff0100bde/uploads/2022/03/2022032331.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">25/03/2022</td>
+                        <td class="latcr">CMHO, Bilaspur</td>
+                        <td class="latceb">Staff Nurse, MPW &amp; Other – 56 Posts</td>
+                        <td class="latcqb">10+2, Diploma, B.Sc Nursing/ Post Basic B.sc Nursing, GNM</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">11-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s3d82c8d1619ad8176d665453cfb2e55f0/uploads/2022/03/2022032381.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">24/03/2022</td>
+                        <td class="latcr">CGPSC</td>
+                        <td class="latceb">State Service (Mains) Exam 2021 </td>
+                        <td class="latcqb">.</td>
+                        <td class="latcab">09/2021</td>
+                        <td class="latclb">06-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.psc.cg.gov.in/pdf/NOTIFICATIONS/Noti_SSME_2021_23032022.PDF"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">23/03/2022</td>
+                        <td class="latcr">CSPDCL</td>
+                        <td class="latceb">Apprentice – 111 Posts</td>
+                        <td class="latcqb">ITI</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">21-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.cspdcl.co.in/cseb/(S(mjfhote15scj0u5yk3lce2gz))/frmViewRecruitment.aspx"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">18/03/2022</td>
+                        <td class="latcr">CMHO, Bilaspur</td>
+                        <td class="latceb">Phramacist Gr II, Desser Gr I &amp; II &amp; Other – 243 Posts</td>
+                        <td class="latcqb">10+2, Diploma (Relevant DIsciplines)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">10-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s3d2ddea18f00665ce8623e36bd4e3c7c5/uploads/2022/03/2022031699.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">18/03/2022</td>
+                        <td class="latcr">CMHO, Durg</td>
+                        <td class="latceb">Staff Nurs, Jr secretariat Asst &amp; Other – 108 Posts</td>
+                        <td class="latcqb">10+12, Drgree (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">23-03 to 06-04-2022 Walk in</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s3851ddf5058cf22df63d3344ad89919cf/uploads/2022/03/2022031767.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">17/03/2022</td>
+                        <td class="latcr">CGPSC</td>
+                        <td class="latceb">Scientific Officer – 23 Posts</td>
+                        <td class="latcqb">Degree, PG (Relevant Disciplines)</td>
+                        <td class="latcab">14/2022</td>
+                        <td class="latclb">30-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://psc.cg.gov.in/pdf/Advertisement/ADV_SO_2022_16032022.pdfc"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">12/03/2022</td>
+                        <td class="latcr">CGPSC</td>
+                        <td class="latceb">Medical Specialist – 458 Posts</td>
+                        <td class="latcqb">Diploma/ Degree (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">21-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.psc.cg.gov.in/pdf/Advertisement/ADV_MEDICAL_SPECIALIST_2022_11032022.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">09/03/2022</td>
+                        <td class="latcr">Family Court, Balod</td>
+                        <td class="latceb">Steno, Typist, Driver, Peon – 6 Posts</td>
+                        <td class="latcqb">5th, 8th Class, Degree (Relevant Disciplines)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">07-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s3c45147dee729311ef5b5c3003946c48f/uploads/2022/03/2022030863.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a name="dnh">
+                    <h3 class="latsec"> Dadra and Nagar Haveli
+                    </h3>
+                </a>
+            </div>
+            <table class="lattbl">
+                <tbody>
+                    <tr class="lattra">
+                        <th class="latcpb">Post Date</th>
+                        <th class="latcr">Recruitment Board</th>
+                        <th class="latceb">Post Name</th>
+                        <th class="latcqb">Qualification</th>
+                        <th class="latcab">Advt No</th>
+                        <th class="latclb">Last Date</th>
+                        <th class="latcmb">More Information</th>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td>.</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a name="dd">
+                    <h3 class="latsec"> Daman and Diu </h3>
+                </a>
+            </div>
+            <table class="lattbl">
+                <tbody>
+                    <tr class="lattra">
+                        <th class="latcpb">Post Date</th>
+                        <th class="latcr">Recruitment Board</th>
+                        <th class="latceb">Post Name</th>
+                        <th class="latcqb">Qualification</th>
+                        <th class="latcab">Advt No</th>
+                        <th class="latclb">Last Date</th>
+                        <th class="latcmb">More Information</th>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">01/04/2022</td>
+                        <td class="latcr">Directorate of Education</td>
+                        <td class="latceb">Asst Teacher, Upper Primary Teacher – 176 Posts</td>
+                        <td class="latcqb">Sr Secondary, Diploma, DEgree (Relevant Disciplines)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">12-04-2022</td>
+                        <td class="latcmb"><strong><a href="https://daman.nic.in/jobs/2022/692-24-03-2022.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">01/04/2022</td>
+                        <td class="latcr">Directorate of Education</td>
+                        <td class="latceb">Block Resource Person – 8 Posts</td>
+                        <td class="latcqb">Sr Secondary, DEgree (Relevant Disciplines)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">12-04-2022</td>
+                        <td class="latcmb"><strong><a href="http://obs/2022/693-24-03-2022.pdf" rel="nofollow noopener"
+                                    target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a name="dl">
+                    <h3 class="latsec"> Delhi </h3>
+                </a>
+            </div>
+            <table class="lattbl">
+                <tbody>
+                    <tr class="lattra">
+                        <th class="latcpb">Post Date</th>
+                        <th class="latcr">Recruitment Board</th>
+                        <th class="latceb">Post Name</th>
+                        <th class="latcqb">Qualification</th>
+                        <th class="latcab">Advt No</th>
+                        <th class="latclb">Last Date</th>
+                        <th class="latcmb">More Information</th>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">06/04/2022</td>
+                        <td class="latcr">Delhi University</td>
+                        <td class="latceb">Librarian, Sr Personal Asst, Tabla Accompanist &amp; Library Attendant – 5
+                            Posts</td>
+                        <td class="latcqb">10th Class, Degree, PG (Relevant Disciplines)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">13-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s385fc37b18c57097425b52fc7afbb6969/uploads/2022/04/2022040322.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">06/04/2022</td>
+                        <td class="latcr">BECIL</td>
+                        <td class="latceb">Content Writer, Videographer cum Editor, Graphic Designer &amp; Other – 10
+                            Posts</td>
+                        <td class="latcqb">Degree, PG Degree/ Diploma (Relevant Discipline)</td>
+                        <td class="latcab">Advt No 130</td>
+                        <td class="latclb">24-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.becil.com/uploads/vacancy/82f0ed0ea4f7e6de3fd43afda1a16b09.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">06/04/2022</td>
+                        <td class="latcr">AIIMS, Delhi</td>
+                        <td class="latceb">Technologist, Technical Asst, Nurse &amp; Other – 7 Posts</td>
+                        <td class="latcqb">8th Class, 10th, 12th Class, Degree, PG (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">21-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.aiims.edu/images/pdf/recruitment/advertisement/neuro1-5-4-22.PDF"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">04/04/2022</td>
+                        <td class="latcr">Delhi University</td>
+                        <td class="latceb">Senior Personal Asst, Laboratory Asst &amp; Other – 23 Posts</td>
+                        <td class="latcqb">Not Mentioned</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">23-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://gargicollege.in/wp-content/uploads/2022/03/Non-Teaching-Post.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">01/04/2022</td>
+                        <td class="latcr">EIL</td>
+                        <td class="latceb">Jr Draftsman Gr I &amp; II – 60 Posts</td>
+                        <td class="latcqb">Diploma (Relevant disciplines)</td>
+                        <td class="latcab">13/2021-222</td>
+                        <td class="latclb">18-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://recruitment.eil.co.in/hrdnew/others/Final-ONLINE%20detailed%20Advertisement%202021-22-13.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">01/04/2022</td>
+                        <td class="latcr">ESIC, New Delhi</td>
+                        <td class="latceb">Specialist Gr II (Sr &amp; Jr Scale) – 55 Posts</td>
+                        <td class="latcqb">PG (Relevant Disciplines)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">20-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.esic.nic.in/attachments/recruitmentfile/8258d87264e2207e193f3b64de924a5d.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">01/04/2022</td>
+                        <td class="latcr">BECIL</td>
+                        <td class="latceb">Pharmacist, Panchkarma Attendant, Lab Technician &amp; Other – 26 Posts</td>
+                        <td class="latcqb">10th, 12th Class, Degree, PG (Relevant Discipline)</td>
+                        <td class="latcab">Advt No 128</td>
+                        <td class="latclb">17-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.becil.com/uploads/vacancy/9ad2995f2daf2287c4d5d1a39a83fc00.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">01/04/2022</td>
+                        <td class="latcr">AMU</td>
+                        <td class="latceb">Assistant Professor, Sr Resident – 7 Posts</td>
+                        <td class="latcqb">As per NMC norms/ Residency Scheme</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">08-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://api.amu.ac.in/storage//file/8003/jobs/1648461918.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">31/03/2022</td>
+                        <td class="latcr">MNRE</td>
+                        <td class="latceb">Scientist E, F – 8 Posts</td>
+                        <td class="latcqb">Ph.D (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">30 Days</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://mnre.gov.in/img/documents/uploads/file_f-1647254643874.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">31/03/2022</td>
+                        <td class="latcr">NTPC</td>
+                        <td class="latceb">Executive – 55 Posts</td>
+                        <td class="latcqb">Degree (Engg)</td>
+                        <td class="latcab">08/2022</td>
+                        <td class="latclb">08-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://img.freejobalert.com/uploads/2022/03/Notification-NTPC-Ltd-Executive-Posts.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">30/03/2022</td>
+                        <td class="latcr">Family Court, New Delhi</td>
+                        <td class="latceb">Junior Judicial Asst – 10 Posts</td>
+                        <td class="latcqb">Matriculation, Any Degree</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">10 Days (05-04-2022)</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://districts.ecourts.gov.in/sites/default/files/JJA.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">29/03/2022</td>
+                        <td class="latcr">BEDF</td>
+                        <td class="latceb">Scientist, Consultant, Lab Analyst &amp; Other – 7 Posts</td>
+                        <td class="latcqb">B.Sc, PG (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">11-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://apeda.gov.in/apedawebsite/Announcements/BEDF_Requirement_various_positions.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">28/03/2022</td>
+                        <td class="latcr">IMPCL</td>
+                        <td class="latceb">Chief Manager, Zonal Manager, Manager &amp; Other – 6 Posts</td>
+                        <td class="latcqb">BE/ B.Tech/ CA/ MBA/ PGDBM</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">29-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="http://www.impclmohan.nic.in/writereaddata/Advt_for_various_posts.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">28/03/2022</td>
+                        <td class="latcr">IARI</td>
+                        <td class="latceb">JRF/Project Associate I, Research Associate I, JRF/SRF &amp; Other – 6 Posts
+                        </td>
+                        <td class="latcqb">Matriculation, Degree, PG/ Ph.D (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">21-04-2022 — Walk in</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.iari.res.in/bic/projectnew32/admin/jobs/Final_ADVT_Genetics_21032022.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">28/03/2022</td>
+                        <td class="latcr">IPPB</td>
+                        <td class="latceb">Chief Technology Officer, AGM, Senior Manager, GM &amp; Other – 12 Posts</td>
+                        <td class="latcqb">Degree, PG (Relevant Discipline)</td>
+                        <td class="latcab">03/2021-22</td>
+                        <td class="latclb">09-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.ippbonline.com/documents/20133/133019/1648224316391.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">24/03/2022</td>
+                        <td class="latcr">Delhi University</td>
+                        <td class="latceb">Librarian, Sr Technical Asst, Jr Asst &amp; Other – 26 Posts</td>
+                        <td class="latcqb">Not Mentioned</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">11-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.arsdcollege.ac.in/wp-content/uploads/2022/03/1.-Advt-Non-Teaching-2022.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">24/03/2022</td>
+                        <td class="latcr">Health &amp; Family Welfare, Delhi</td>
+                        <td class="latceb">Consultant – 5 Posts</td>
+                        <td class="latcqb">Degree, PG (Relevant Disciplines), CA, ICWA</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">15-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://main.mohfw.gov.in/sites/default/files/Notice%20for%20vacancy%20of%20consultant.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">24/03/2022</td>
+                        <td class="latcr">ICSI</td>
+                        <td class="latceb">Consultant – 8 Posts</td>
+                        <td class="latcqb">LLB/ PG/ Ph.D (Commerce)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">08-04-2022</td>
+                        <td class="latcmb"><strong><a href="https://www.icsi.edu/media/webmodules/AnnexureA_220222.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">23/03/2022</td>
+                        <td class="latcr">NSTFDC</td>
+                        <td class="latceb">Asst General Manager, Manager &amp; Other – 5 Posts</td>
+                        <td class="latcqb">Degree, PG (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">30 Days (18-04-2022)</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://nstfdc.tribal.gov.in/(S(cb1glqkaundwkj1rpza52pb4))/UploadData/Advertisements/ce3d046c-16ab-472e-b1da-50e12d01d356.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">23/03/2022</td>
+                        <td class="latcr">Central Electricity Regulatory Commission</td>
+                        <td class="latceb">Research Officer (law), Research Associate (Law) – 5 Posts</td>
+                        <td class="latcqb">Degree (Law)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">07-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cercind.gov.in/2022/vacancy/TOR-%20Staff%20consultant%20Law%20Division220322.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">23/03/2022</td>
+                        <td class="latcr">NITRD</td>
+                        <td class="latceb">Junior Medical Officer, Laboratory Technician &amp; Other – 5 Posts</td>
+                        <td class="latcqb">12th Class, Degree (Relevant Disciplines)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">04-04-2022 – Waklk in</td>
+                        <td class="latcmb"><strong><a
+                                    href="http://www.nitrd.nic.in/WriteReadData/userfiles/file/ICMR%20Project%20Notification.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">22/03/2022</td>
+                        <td class="latcr">Delhi University</td>
+                        <td class="latceb">Assistant Professor – 132 Posts</td>
+                        <td class="latcqb">PG (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">2 Weeks (05-04-2022)</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.deshbandhucollege.ac.in/uploads/pdf/1647927829_final_ad_teach.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">18/03/2022</td>
+                        <td class="latcr">Jawaharlal Nehru University</td>
+                        <td class="latceb">Research Scientist, Research Associate, Technical Officer &amp; Other – 8
+                            Posts</td>
+                        <td class="latcqb">10th Class, Degree, PG, Ph.D (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">13–04-2022</td>
+                        <td class="latcmb"><strong><a href="https://www.jnu.ac.in/career" rel="nofollow noopener"
+                                    target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">17/03/2022</td>
+                        <td class="latcr">CMSS</td>
+                        <td class="latceb">General Manager, Manager, Pharmacists – 10 Posts</td>
+                        <td class="latcqb">B.Phaema, M.Pharma, Degree, PG (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">08-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="http://www.cmss.gov.in/sites/default/files/Advt.%20RR%20%26%20application%20for%20the%20post%20of%20GM%28LSC%29%2C%20Managers%20and%20Warehouse%20Manager%28Pharmacists%29%20%281%29.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">17/03/2022</td>
+                        <td class="latcr">ESIC Hqrs, New Delhi</td>
+                        <td class="latceb">Specialist Gr II (Jr &amp; Sr Scale) – 55 Posts</td>
+                        <td class="latcqb">DM/ MCH</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">20-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.esic.nic.in/attachments/recruitmentfile/1e2f7e509ab77b1e4ca627e26a5a32f9.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">14/03/2022</td>
+                        <td class="latcr">IHBAS</td>
+                        <td class="latceb">Finance Advisor, Project Engineer, Excecutive Engineer &amp; Other – 31 Posts
+                        </td>
+                        <td class="latcqb">8th, 10+2, Diploma, Degree, PG (Relevant Disciplines)</td>
+                        <td class="latcab">02/2022</td>
+                        <td class="latclb">29-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="http://ihbas.delhigovt.nic.in/wps/wcm/connect/d558eb804645a0c1813df79f4cfcc4fd/admnmarch1203c.pdf?MOD=AJPERES&amp;lmod=-827857853"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">14/03/2022</td>
+                        <td class="latcr">IHBAS</td>
+                        <td class="latceb">Asst Professor – 17 Posts</td>
+                        <td class="latcqb">PG, Ph.D (Relevant Disciplines)</td>
+                        <td class="latcab">03/2022</td>
+                        <td class="latclb">30 Days</td>
+                        <td class="latcmb"><strong><a
+                                    href="http://ihbas.delhigovt.nic.in/wps/wcm/connect/3c8ad0004645a34e8148f79f4cfcc4fd/assistantprof1203march.pdf?MOD=AJPERES&amp;lmod=-1696065228"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">12/03/2022</td>
+                        <td class="latcr">ESIC, New Delhi</td>
+                        <td class="latceb">Social Security Officer/ Manager Gr-II/Superintendent – 93 Posts</td>
+                        <td class="latcqb">Any Degree</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">12-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.esic.nic.in/attachments/recruitmentfile/137aadcd28fca627bf24b12befd88720.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">12/03/2022</td>
+                        <td class="latcr">Rehabilitation Council of India</td>
+                        <td class="latceb">Asst Section Officer, Jr Hindi Translator &amp; Other – 6 Posts</td>
+                        <td class="latcqb">Not Mentioned</td>
+                        <td class="latcab">01/2022</td>
+                        <td class="latclb">45 Days ( 26–04-2022)</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://img.freejobalert.com/uploads/2022/03/Notification-RCI-ASO-JHT-Other-Posts.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">05/03/2022</td>
+                        <td class="latcr">NWDA</td>
+                        <td class="latceb">Asst Engineer – 9 Posts</td>
+                        <td class="latcqb">Degree (Civil Engg)</td>
+                        <td class="latcab">009/2022</td>
+                        <td class="latclb">04–04-2022</td>
+                        <td class="latcmb"><strong><a href="https://www.freejobalert.com/nwda/120232/#Asst-Engineer"
+                                    target="_blank" rel="noopener">Get Details</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">21/02/2022</td>
+                        <td class="latcr">Department of Science &amp; Technology</td>
+                        <td class="latceb">Scientist – C, D, F – 13 Posts</td>
+                        <td class="latcqb">Degree, PG, Ph.D (Relevant Disciplines)</td>
+                        <td class="latcab">01/2021</td>
+                        <td class="latclb">60 days</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://dst.gov.in/sites/default/files/Final%20advertisement.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a name="goa">
+                    <h3 class="latsec"> Goa </h3>
+                </a>
+            </div>
+            <table class="lattbl">
+                <tbody>
+                    <tr class="lattra">
+                        <th class="latcpb">Post Date</th>
+                        <th class="latcr">Recruitment Board</th>
+                        <th class="latceb">Post Name</th>
+                        <th class="latcqb">Qualification</th>
+                        <th class="latcab">Advt No</th>
+                        <th class="latclb">Last Date</th>
+                        <th class="latcmb">More Information</th>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">06/04/2022</td>
+                        <td class="latcr">Goa Medical College</td>
+                        <td class="latceb">Senior Resident – 10 Posts</td>
+                        <td class="latcqb">MBBS, Degree/ Diploma</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">21-04-2022 — Walk in</td>
+                        <td class="latcmb"><strong><a
+                                    href="http://www.gmc.goa.gov.in/images/Site_Images/photos/public_noticies/vacancy/Recruitment_Cell/2022/advt_No_1_2022.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">06/04/2022</td>
+                        <td class="latcr">Goa Dental College &amp; Hospital</td>
+                        <td class="latceb">Senior Resident – 5 Posts</td>
+                        <td class="latcqb">BDS, MDS (Concerned Speciality)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">18-04-2022 — Walk in</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://gdch.goa.gov.in/wp-content/uploads/2022/04/Walk-in-interview-for-the-post-of-Senior-Resident-Tenure-Post.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">05/04/2022</td>
+                        <td class="latcr">CSIR NIO</td>
+                        <td class="latceb">Scientist – 22 Posts</td>
+                        <td class="latcqb">PG, Ph.D (Relevant Discipline)</td>
+                        <td class="latcab">REC-01/2022</td>
+                        <td class="latclb">30-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="http://itg.nio.org/public/Public.nsf/7756D39CCEBB728365258807002F9F3A/$FILE/Scientist%20Rec%202022.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">22/03/2022</td>
+                        <td class="latcr">Goa Shipyard limited</td>
+                        <td class="latceb">Asst Superintendent, Plumber, Cook, Office Asst, Civil Asst &amp; Other – 253
+                            Posts</td>
+                        <td class="latcqb">SSC, ITI, Diploma (Relevant Discipline)</td>
+                        <td class="latcab">04/2022</td>
+                        <td class="latclb">28-04-2022</td>
+                        <td class="latcmb"><strong><a href="https://goashipyard.in/file/2022/03/ADV042022.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">22/03/2022</td>
+                        <td class="latcr">Goa Shipyard limited</td>
+                        <td class="latceb">Deputy Manager, Assistant Manager – 11 Posts</td>
+                        <td class="latcqb">BE/ B.Tech/ Degree &amp; CA/ MBA</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">22-04-2022</td>
+                        <td class="latcmb"><strong><a href="https://goashipyard.in/file/2022/03/ADV-032022.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a name="gj">
+                    <h3 class="latsec"> Gujarat </h3>
+                </a>
+            </div>
+            <table class="lattbl">
+                <tbody>
+                    <tr class="lattra">
+                        <th class="latcpb">Post Date</th>
+                        <th class="latcr">Recruitment Board</th>
+                        <th class="latceb">Post Name</th>
+                        <th class="latcqb">Qualification</th>
+                        <th class="latcab">Advt No</th>
+                        <th class="latclb">Last Date</th>
+                        <th class="latcmb">More Information</th>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">05/04/2022</td>
+                        <td class="latcr">INFLIBNET</td>
+                        <td class="latceb">Scientist -B, C, Asst &amp; other – 6 Posts</td>
+                        <td class="latcqb">Degree, PG, Ph.D (relevant Discipline), DCA</td>
+                        <td class="latcab">01/2022</td>
+                        <td class="latclb">21 Days</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.inflibnet.ac.in/jobs/Advt.No.01-2022_Website-version.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">29/03/2022</td>
+                        <td class="latcr">GPSSB</td>
+                        <td class="latceb">Gram Sevak – 1571 Posts</td>
+                        <td class="latcqb">–</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">15-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://gpssb.gujarat.gov.in/writereaddata/Portal/EventActivity/37/146_1_1_ADVT_15_GRAMSEVAK_Detailed_Advt.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">29/03/2022</td>
+                        <td class="latcr">GPSSB</td>
+                        <td class="latceb">Mukya Sevika – 225 Posts</td>
+                        <td class="latcqb">–</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">15-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://gpssb.gujarat.gov.in/writereaddata/Portal/EventActivity/36/145_1_1_ADVT_14_202122_Mukhya_Sevika_Detailed_ADVT.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">28/03/2022</td>
+                        <td class="latcr">CSMCRI</td>
+                        <td class="latceb">Project Associate-I, Senior Project Associate, Project Associate &amp; Other
+                            – 7 Posts</td>
+                        <td class="latcqb">Degree, PG, Ph.D (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">13-04-2022</td>
+                        <td class="latcmb"><strong><a href="https://www.csmcri.res.in/node/8356" rel="nofollow noopener"
+                                    target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">24/03/2022</td>
+                        <td class="latcr">GUDC Ltd</td>
+                        <td class="latceb">Dy Manager, Asst Manager, Additional Asst Manager – 12 Posts</td>
+                        <td class="latcqb">Diploma, BE, B.Tech</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">11-04-2022</td>
+                        <td class="latcmb"><strong><a href="http://www.gudcltd.com/AllDocuments/2022-3-20_477.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">21/03/2022</td>
+                        <td class="latcr">WCD, Gujarat</td>
+                        <td class="latceb">Anganwadi Worker, Helper – 8467 Posts</td>
+                        <td class="latcqb">7th Class/ 10th Class</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">04-04-2022</td>
+                        <td class="latcmb"><strong><a href="https://e-hrms.gujarat.gov.in/Advertisement/Index"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">21/03/2022</td>
+                        <td class="latcr">VMC</td>
+                        <td class="latceb">Ward Officer, Revenue Officer, Jr Clerk &amp; other – 641 Posts</td>
+                        <td class="latcqb">HSC, Diploma, Degree (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">10-04-2022</td>
+                        <td class="latcmb"><strong><a href="https://vmc.gov.in/Recruitment/Recruitment.aspx"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">19/03/2022</td>
+                        <td class="latcr">Surat Municipal Corporation</td>
+                        <td class="latceb">Anganwadi Worker, Mini Anganvadi Worker – 177 Posts</td>
+                        <td class="latcqb">–</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">04-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.suratmunicipal.gov.in/Content/Documents/Jobs/PRO2508.pdf?ver=4514"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">18/03/2022</td>
+                        <td class="latcr">Mehsana Urban Cooperative Bank</td>
+                        <td class="latceb">Cheif Risk Manager, Company Secretary &amp; Other – 21 Posts</td>
+                        <td class="latcqb">Degree/ PG (Relevant Discipline)/ CA</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">07-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.mucbank.com/mucb/downloads/Recruitment_Notice_March_2022.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">17/03/2022</td>
+                        <td class="latcr">GETCO</td>
+                        <td class="latceb">Accounts Officer – 5 Posts</td>
+                        <td class="latcqb">CA / ICWA</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">05-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.getcogujarat.com/getco_newsite/files/rec2022/Advt%20-%20AO%20-%202022%20Final.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">17/03/2022</td>
+                        <td class="latcr">PGVCL</td>
+                        <td class="latceb">Vidyut Sahayak (Junior Assistant) – 57 Posts</td>
+                        <td class="latcqb">Degree (Relevant Disciplines)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">06-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.pgvcl.com/jobs/VSJA_DYSAST_JE_EL_SEBC/Advertisement_DySA%20-%20ST.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">17/03/2022</td>
+                        <td class="latcr">PGVCL</td>
+                        <td class="latceb">Deputy Superintendent – 27 Posts</td>
+                        <td class="latcqb">C.A. / I.C.W.A. / M.Com. / M.B.A</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">06-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.pgvcl.com/jobs/VSJA_DYSAST_JE_EL_SEBC/PGVCL%20V.S.%20Jr.%20Assistant.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">11/03/2022</td>
+                        <td class="latcr">Collectorate, Valsad</td>
+                        <td class="latceb">Legal Officer – 11 Posts</td>
+                        <td class="latcqb">Degree (Law)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">17-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s30cb929eae7a499e50248a3a78f7acfc7/uploads/2022/03/2022030321.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a name="hy">
+                    <h3 class="latsec"> Haryana </h3>
+                </a>
+            </div>
+            <table class="lattbl">
+                <tbody>
+                    <tr class="lattra">
+                        <th class="latcpb">Post Date</th>
+                        <th class="latcr">Recruitment Board</th>
+                        <th class="latceb">Post Name</th>
+                        <th class="latcqb">Qualification</th>
+                        <th class="latcab">Advt No</th>
+                        <th class="latclb">Last Date</th>
+                        <th class="latcmb">More Information</th>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">05/04/2022</td>
+                        <td class="latcr">BFUHS</td>
+                        <td class="latceb">Sr Resident/Sr Tutor – 16 Posts</td>
+                        <td class="latcqb">DM/M.Ch, MD/MS</td>
+                        <td class="latcab">02/2022</td>
+                        <td class="latclb">19-04-2022 – Walk in</td>
+                        <td class="latcmb"><strong><a href="https://www.bfuhs.ac.in/careers/Estt/1-4-22/Add.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">04/04/2022</td>
+                        <td class="latcr">BFUHS</td>
+                        <td class="latceb">Medical Officer, Lecturer, Radiographer &amp; Other – 10 Posts</td>
+                        <td class="latcqb">10+2, Degree, PG (Relevant Discipline)</td>
+                        <td class="latcab">01/2022</td>
+                        <td class="latclb">13-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.bfuhs.ac.in/careers/advt_1_22/Advt_%20No1_22.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">21/03/2022</td>
+                        <td class="latcr">NHM, Haryana</td>
+                        <td class="latceb">MLHP cum CHO – 787 Posts</td>
+                        <td class="latcqb">B.Sc (Nursing), Post-Basic B.Sc. Nursing, B.A.M.S</td>
+                        <td class="latcab">01/2020-21</td>
+                        <td class="latclb">06-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.freejobalert.com/nhm-haryana-mlhp-cum-cho-2022/963990/"
+                                    target="_blank" rel="noopener">Get Details</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">19/03/2022</td>
+                        <td class="latcr">NID, Haryana</td>
+                        <td class="latceb">“Sr Designer, Registrar, Head Librarian, Administrative Officer &amp; Other”
+                            – 9 Posts</td>
+                        <td class="latcqb">Degree, PG Degree/ Diploma (Relevant Disciplines)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">01-05-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://www.nidh.ac.in/_files/ugd/f0c2c3_cd8e05dbd7ff4d659ea1dd03e576a35a.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">16/03/2022</td>
+                        <td class="latcr">HPSC</td>
+                        <td class="latceb">Asst Employment Officer – 5 Posts</td>
+                        <td class="latcqb">PG (Relevant Discipline)</td>
+                        <td class="latcab">07/2022</td>
+                        <td class="latclb">04-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="http://hpsc.gov.in/Portals/0/Advt_%20No_%2072022_Assistant%20Employment%20Officer.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">05/03/2022</td>
+                        <td class="latcr">NISE</td>
+                        <td class="latceb">Director, Deputy Director, Office Secretary-I &amp; Other – 12 Posts</td>
+                        <td class="latcqb">Diploma/ Degree, PG/ Ph.D (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">20-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://nise.res.in/wp-content/uploads/2022/03/Advertisement-2022-in-NISE.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a name="hp">
+                    <h3 class="latsec"> Himachal Pradesh </h3>
+                </a>
+            </div>
+            <table class="lattbl">
+                <tbody>
+                    <tr class="lattra">
+                        <th class="latcpb">Post Date</th>
+                        <th class="latcr">Recruitment Board</th>
+                        <th class="latceb">Post Name</th>
+                        <th class="latcqb">Qualification</th>
+                        <th class="latcab">Advt No</th>
+                        <th class="latclb">Last Date</th>
+                        <th class="latcmb">More Information</th>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">16/03/2022</td>
+                        <td class="latcr">HPPSC</td>
+                        <td class="latceb">Assistant Engineer (Electrical) – 76 Posts</td>
+                        <td class="latcqb">Degree (Electrical Engg/ Electrical &amp; Electronics Engg)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">12-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="http://www.hppsc.hp.gov.in/hppsc//WriteReadData/LINKS/Advertisement%20Number%20%20020320224d43a19b-6c3d-49f6-8b55-c1f0935f2cb2.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a name="jk">
+                    <h3 class="latsec"> Jammu and Kashmir
+                    </h3>
+                </a>
+            </div>
+            <table class="lattbl">
+                <tbody>
+                    <tr class="lattra">
+                        <th class="latcpb">Post Date</th>
+                        <th class="latcr">Recruitment Board</th>
+                        <th class="latceb">Post Name</th>
+                        <th class="latcqb">Qualification</th>
+                        <th class="latcab">Advt No</th>
+                        <th class="latclb">Last Date</th>
+                        <th class="latcmb">More Information</th>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">04/04/2022</td>
+                        <td class="latcr">District Social Welfare Officer, Kupwara</td>
+                        <td class="latceb">Case Worker, Counsellor, IT Staff &amp; Other – 13 Posts</td>
+                        <td class="latcqb">Matriculation, Degree (Law), PG (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">10-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s302a32ad2669e6fe298e607fe7cc0e1a0/uploads/2022/03/2022033173.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">01/04/2022</td>
+                        <td class="latcr">NHM, Baramulla</td>
+                        <td class="latceb">Junior Gr Nurse, Lab Technician, RBSK ANM &amp; Other – 28 Posts</td>
+                        <td class="latcqb">Matriculation, 10+2, Diploma, Degree (Relevant Discipline)</td>
+                        <td class="latcab">–</td>
+                        <td class="latclb">20-04-2022</td>
+                        <td class="latcmb"><strong><a
+                                    href="https://cdn.s3waas.gov.in/s3884d247c6f65a96a7da4d1105d584ddd/uploads/2022/03/2022032984.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                    <tr class="lattrbord">
+                        <td class="latcpb">23/03/2022</td>
+                        <td class="latcr">PGCIL</td>
+                        <td class="latceb">Diploma (Trainee) – 16 Posts</td>
+                        <td class="latcqb">Diploma (Engg)</td>
+                        <td class="latcab">01/2022</td>
+                        <td class="latclb">20-04-2022</td>
+                        <td class="latcmb"><strong><a href="https://careers.powergrid.in/nr2dtedtcrectt2022/docs/ad.pdf"
+                                    rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <div class="footer">
+        <p class="disclaimer">Copyright © 2021 JoinRecruitingJob.com All Rights Reserved.</p>
+    </div>
+    </div>
+</body>
+
+</html>

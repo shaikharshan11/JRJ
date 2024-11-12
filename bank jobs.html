@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Jobs</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Lato:ital@1&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Lato:ital@1&family=Merriweather:wght@700;900&family=Zen+Antique&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+        .menu {
+            font-size: 22px;
+            background-color: #0c155a;
+            color: white;
+            margin: -22px -8px 0px -8px;
+            font-family: 'Cabin', sans-serif;
+        }
+
+        p {
+            padding: 10px 23px;
+        }
+
+        .logo-1 {
+            padding: 0px 20px;
+            margin: -22px 0px 30px 0px;
+            width: 9%;
+        }
+
+        .homeimg {
+            width: 20%;
+            float: right;
+            margin: -22px -8px 0px 0px;
+        }
+
+        .profilebar {
+            margin: 0px -8px;
+            background-color: #0c155a;
+            height: 70px;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile {
+            width: 50px;
+            padding: 10px 20px;
+        }
+
+        .search {
+            height: 28px;
+            width: 1033px;
+            padding: 0px 10px;
+            margin: 10px 0px;
+        }
+
+        .btn {
+            width: 175px;
+            height: 35px;
+            border: 0px;
+            margin: 0px 40px;
+            border-radius: 5px;
+            color: white;
+            background-image: linear-gradient(#39a7d6, #1a5db4, #0b1a91);
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-image: linear-gradient(#0b1a91, #0b1a91, #0b1a91);
+        }
+
+        .btn1 {
+            width: 100px;
+            height: 35px;
+            border: 0px;
+            border-radius: 5px;
+            margin: 0px 40px 0px 0px;
+            color: white;
+            background-image: linear-gradient(#39a7d6, #1a5db4, #0b1a91);
+            cursor: pointer;
+        }
+
+        .btn1:hover {
+            background-image: linear-gradient(#0b1a91, #0b1a91, #0b1a91);
+        }
+
+        .container {
+            background-size: 100%;
+            background-repeat: repeat;
+            background-position: center top;
+            margin: 0px -8px;
+            padding: 28px;
+        }
+
+        .body1 {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        .allindia {
+            margin: 0% 8.5% 0% 5%;
+            width: 25%;
+        }
+
+        .allstate {
+            margin: 0% 8.5% 0% 0%;
+            width: 25%;
+        }
+
+        .job {
+            margin: 0px;
+            width: 9%;
+        }
+
+        .btn5,
+        .btn6,
+        .btn7,
+        .btn8,
+        .btn9,
+        .btn10,
+        .btn11,
+        .btn12 {
+            height: 52px;
+            width: 100%;
+            text-align: center;
+            font-size: larger;
+            font-weight: 800;
+            border-radius: 0;
+            background-image: linear-gradient(#a3e8ec, #1990b4, #1990b4, #1990b4, #1990b4, #1990b4);
+            border: 0px;
+            color: white;
+            font-family: 'Merriweather', serif;
+            cursor: pointer;
+            margin-bottom: 6px;
+        }
+
+        .btn5:hover,
+        .btn6:hover,
+        .btn7:hover,
+        .btn8:hover,
+        .btn9:hover,
+        .btn10:hover,
+        .btn11:hover,
+        .btn12:hover {
+            background-image: linear-gradient(#3ad3db, #1990b4, #1990b4, #1990b4, #3ad3db);
+            font-size: 19px;
+        }
+
+        .btn13 {
+            border-radius: 0;
+            width: 100%;
+            height: 32px;
+            text-align: left;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .btn13:hover {
+            background-color: #e4a16a;
+            color: white;
+        }
+
+        .btn14 {
+            border-radius: 0;
+            width: 100%;
+            height: 32px;
+            text-align: left;
+            margin: -2px 0px 0px 0px;
+            cursor: pointer;
+        }
+
+        .btn14:hover {
+            background-color: #e4a16a;
+            color: white;
+        }
+
+        .btn15 {
+            width: 100%;
+            height: 32px;
+            text-align: left;
+            border-radius: 0;
+            margin: -2px 0px 0px 0px;
+            cursor: pointer;
+        }
+
+        .btn15:hover {
+            background-color: #e4a16a;
+            color: white;
+        }
+
+        .btn16 {
+            border-radius: 0;
+            width: 100%;
+            height: 32px;
+            text-align: left;
+            margin: -2px 0px 0px 0px;
+            cursor: pointer;
+        }
+
+        .btn16:hover {
+            background-color: #e4a16a;
+            color: white;
+        }
+
+        .btn17 {
+            width: 100%;
+            height: 32px;
+            text-align: left;
+            border-radius: 0;
+            margin: -2px 0px 0px 0px;
+            cursor: pointer;
+        }
+
+        .btn17:hover {
+            background-color: #e4a16a;
+            color: white;
+        }
+
+        .panel {
+            margin-top: 20px;
+            border: 8px;
+            border-color: #084ea8;
+        }
+
+        .panel-heading {
+            height: 28px;
+            width: 101%;
+            background-color: #9cbeebd0;
+            color: red;
+            font-style: italic;
+            padding-left: 8px;
+            margin-top: -16px;
+        }
+
+        .panel-body {
+            height: 182px;
+            width: 98.9%;
+            padding: 0px 12px 12px 12px;
+            background-image: linear-gradient(#9cbeebd0, #89b5eed0, #79aceed0, #609decd0, #4c92eed0, #3082eed0);
+        }
+
+        .footer {
+            height: 12vh;
+            width: 100%;
+            border-right-width: 10px;
+            padding-right: 16px;
+            margin: 0px 8px -8px -8px;
+            background-color: #0c155a;
+            color: white;
+            font-family: 'Lato', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .disclaimer {
+            width: 80%;
+            text-align: center;
+        }
+
+        .image2 {
+            display: none;
+        }
+
+        .upcs1 {
+            padding: 2px;
+            width: 790px;
+            color: #000000;
+            border: 2px;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        .latsec {
+    margin-bottom: 10px;
+    color: #000080;
+    font-weight: bold;
+}
+        .lattbl {
+    padding: 2px;
+    width: 790px;
+    color: #000000;
+    border: 2px solid #006699;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.lattra {
+    border: 1px solid #000000;
+    background-color: #adadad;
+    color: #800000;
+    width: 790px;
+}
+.latcaa, .latcab, .latcea, .latceb, .latcla, .latclb, .latcma, .latcmb, .latcpa, .latcpb, .latcqa, .latcqb, .latcr {
+    word-wrap: break-word;
+    font-size: 13px;
+    border: 1px solid #000000;
+}
+
+        @media only screen and (max-width: 720px) {
+            .logo-1 {
+                display: none;
+            }
+
+            .homeimg {
+                display: none;
+            }
+
+            .image2 {
+                display: block;
+                width: 100%;
+                margin-top: -20px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <p>Bank Jobs</p>
+        </div>
+    </nav>
+    <div>
+        <img class="logo-1" title="Join Recruiting Job" alt="Join Recruiting Job"
+            src="file:///C:/Users/Mohammed%20Arshan/Desktop/mini%20project%20-%20Copy/mini%20project%20-%20Copy/Join%20Recruting%20Job.jpg">
+        <img src="file:///C:/Users/admin/Pictures/Saved%20Pictures/Homeimg%20phone.png" class="image2" />
+        <img class="homeimg" title="Latest Government Jobs" alt="Latest Government Jobs"
+            src="http://www.inspiringmeme.com/wp-content/uploads/2015/05/all-nationalised-banks-in-delhi-ncr.png">
+        <div class="profilebar">
+            <img class="profile" title="profile" alt="profile" src="file:///C:/Users/Mohammed%20Arshan/Downloads/jobrecruitingjob/jobrecruitingjob/profile%20icon.png">
+            <input class="search" type="text" placeholder="Search or type a URL">
+            <button class="btn">Job Predictor</button>
+            <button class="btn1">Sign in</button>
+        </div>
+        <div class="container">
+            <section class="body1">
+                <section class="allindia">
+                    <div>
+                        <a href="#upsc">
+                            <button class="btn5">All Banks</button>
+                        </a><br>
+                    </div>
+                    <div>
+                        <a href="#scc">
+                            <button class="btn6">Other Govt Financial Institutes</button>
+                        </a><br>
+                    </div>
+                </section>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <b>Related to News, Announcements and Advertisement:</b>
+                    </div>
+                    <div class="panel-body">
+                        <marquee behavior="scroll" scrollamount="3" direction="up">
+                            <b>
+                                Bank of Baroda Recruitment 2022 – Apply Online for 159 Branch Receivables Manager Posts..
+                                <a style="color: rgb(4, 0, 223); text-decoration: none;"
+                                    href="https://www.freejobalert.com/bank-of-baroda-recruitment/15180/#Branch-Receivables-Manager">Get Details...</a><br>
+                                RBI Officer Grade B Recruitment 2022 – Apply Online for 294 Posts.
+                                <a style="color: rgb(4, 0, 223); text-decoration: none;"
+                                    href="https://www.freejobalert.com/rbi-officer-grade-b-2022/964887/">Get Details...</a><br>
+                                    
+                                Nainital Bank Ltd 2022 – Management Trainees, Clerk Result Released.
+                                <a style="color: rgb(4, 0, 223); text-decoration: none;"
+                                    href="https://www.freejobalert.com/nainital-bank/21420/#Management-Trainees-Clerks">Get Details...</a><br>
+                                IBPS Clerk X Result 2022 – Provisional Allotment Under Reserve List Released.
+                                <a style="color: rgb(4, 0, 223); text-decoration: none;"
+                                    href="https://www.freejobalert.com/ibps-clerk-x/900665/">Get Details...</a><br>
+                                IBPS PO/ MT-XI Result 2022 – Interview Result Released
+                                <a style="color: rgb(4, 0, 223); text-decoration: none;"
+                                    href="https://www.freejobalert.com/ibps-po-2021/945052/">Get Details...</a><br>
+                                 <br>
+                                IBPS Specialist Officer XI Result 2022 – Interview Result Released. <br>
+                                IBPS PO/ MT X Result 2022 – Provisional Allotment List Released. <br>
+                            </b>
+                        </marquee>
+                    </div>
+                </div>
+            </section>
+            <div>
+                <a name="upsc"><h4 class="latsec"> All Banks </h4></a>
+            </div>
+            <table class="lattbl">
+                <tbody>
+                <tr class="lattra">
+                <th class="latcpb">Post Date</th>
+                <th class="latcr">Bank Name</th>
+                <th class="latceb">Post Name</th>
+                <th class="latcqb">Qualification</th>
+                <th class="latcab">Advt No</th>
+                <th class="latclb">Last Date</th>
+                <th class="latcmb">More Information</th>
+                </tr>
+                <tr class="lattrbord">
+                <td class="latcpb">31/03/2022</td>
+                <td class="latcr">Punjab National Bank</td>
+                <td class="latceb">Peon – 14 Posts</td>
+                <td class="latcqb">12th Class</td>
+                <td class="latcab">–</td>
+                <td class="latclb">09-04-2022</td>
+                <td class="latcmb"><strong><a href="https://img.freejobalert.com/uploads/2022/03/Notification-PNB-Part-Time-Sweeper-Posts.pdf" rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                </tr>
+                <tr class="lattrbord">
+                <td class="latcpb">28/03/2022</td>
+                <td class="latcr">IPPB</td>
+                <td class="latceb">Chief Technology Officer, AGM, Senior Manager, GM &amp; Other – 12 Posts</td>
+                <td class="latcqb">Degree, PG (Relevant Discipline)</td>
+                <td class="latcab">03/2021-22</td>
+                <td class="latclb">09-04-2022</td>
+                <td class="latcmb"><strong><a href="https://www.ippbonline.com/documents/20133/133019/1648224316391.pdf" rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                </tr>
+                <tr class="lattrbord">
+                <td class="latcpb">26/03/2022</td>
+                <td class="latcr">Bellari DCC bank</td>
+                <td class="latceb">Computer Engineer, First Class Assistant, Second-class assistant, Motorist, – 58 Posts</td>
+                <td class="latcqb">PUC/ SSLC/ BE/ Degree/ MCA (Relevnat Discipline)</td>
+                <td class="latcab">–</td>
+                <td class="latclb">16-04-2022</td>
+                <td class="latcmb"><strong><a href="https://img.freejobalert.com/uploads/2022/03/Notification-DCC-Bank-Ballari-First-Division-Assistant-Driver-Other-Posts.pdf" rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                </tr>
+                <tr class="lattrbord">
+                <td class="latcpb">17/03/2022</td>
+                <td class="latcr">Karnataka Apex Bank</td>
+                <td class="latceb">Bank Assistant – 79 Posts</td>
+                <td class="latcqb">Any Degree</td>
+                <td class="latcab">–</td>
+                <td class="latclb">16-04-2022</td>
+                <td class="latcmb"><strong><a href="https://emsecure.in/Apex22-BA/Content/pdf/Apex_Notification.pdf" rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                </tr>
+                </tbody>
+                </table>
+            <div>
+                <a name="scc"><h4 class="latsec"> Other Govt Financial Institutes </h4></a>
+            </div>
+            <table class="lattbl">
+                <tbody>
+                <tr class="lattra">
+                <th class="latcpb">Post Date</th>
+                <th class="latcr">Recruitment Board</th>
+                <th class="latceb">Post Name</th>
+                <th class="latcqb">Qualification</th>
+                <th class="latcab">Advt No</th>
+                <th class="latclb">Last Date</th>
+                <th class="latcmb">More Information</th>
+                </tr>
+                <tr class="lattrbord">
+                <td class="latcpb">30/03/2022</td>
+                <td class="latcr">RBI</td>
+                <td class="latceb">Officer Grade B – 294 Posts</td>
+                <td class="latcqb">Degree, PG (Relevant Discipline)</td>
+                <td class="latcab">2A/2021-22</td>
+                <td class="latclb">18-04-2022</td>
+                <td class="latcmb"><strong><a href="https://www.freejobalert.com/rbi-officer-grade-b-2022/964887/" target="_blank" rel="noopener">Get Details</a></strong></td>
+                </tr>
+                <tr class="lattrbord">
+                <td class="latcpb">29/03/2022</td>
+                <td class="latcr">RBI</td>
+                <td class="latceb">Assistant Manager – 9 Posts</td>
+                <td class="latcqb">Degree, PG (Relevant Disciplines)</td>
+                <td class="latcab">–</td>
+                <td class="latclb">18-04-2022</td>
+                <td class="latcmb"><strong><a href="https://opportunities.rbi.org.in/scripts/bs_viewcontent.aspx?Id=4105" rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                </tr>
+                <tr class="lattrbord">
+                <td class="latcpb">21/03/2022</td>
+                <td class="latcr">ECGC Ltd</td>
+                <td class="latceb">Probationary Officer – 75 Posts</td>
+                <td class="latcqb">Any Degree</td>
+                <td class="latcab">–</td>
+                <td class="latclb">20-04-2022</td>
+                <td class="latcmb"><strong><a href="https://img.freejobalert.com/uploads/2022/03/Notification-ECGC-Ltd-Probationary-Officers-Posts.pdf" rel="nofollow noopener" target="_blank">Get Details..</a></strong></td>
+                </tr>
+                </tbody>
+                </table>
+        </div>
+        <div class="footer">
+            <p class="disclaimer">Copyright © 2021 JoinRecruitingJob.com All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

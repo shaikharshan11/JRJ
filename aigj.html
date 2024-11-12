@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All India Govt. Jobs</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Lato:ital@1&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Lato:ital@1&family=Merriweather:wght@700;900&family=Zen+Antique&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+        .menu {
+            font-size: 22px;
+            background-color: #0c155a;
+            color: white;
+            margin: -22px -8px 0px -8px;
+            font-family: 'Cabin', sans-serif;
+        }
+
+        p {
+            padding: 10px 23px;
+        }
+
+        .logo-1 {
+            padding: 0px 20px;
+            margin: -22px 0px 30px 0px;
+            width: 9%;
+        }
+
+        .homeimg {
+            width: 34.9%;
+            float: right;
+            margin: -22px -8px 0px 0px;
+        }
+
+        .profilebar {
+            margin: 0px -8px;
+            background-color: #0c155a;
+            height: 70px;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile {
+            width: 50px;
+            padding: 10px 20px;
+        }
+
+        .search {
+            height: 28px;
+            width: 1033px;
+            padding: 0px 10px;
+            margin: 10px 0px;
+        }
+
+        .btn {
+            width: 175px;
+            height: 35px;
+            border: 0px;
+            margin: 0px 40px;
+            border-radius: 5px;
+            color: white;
+            background-image: linear-gradient(#39a7d6, #1a5db4, #0b1a91);
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-image: linear-gradient(#0b1a91, #0b1a91, #0b1a91);
+        }
+
+        .btn1 {
+            width: 100px;
+            height: 35px;
+            border: 0px;
+            border-radius: 5px;
+            margin: 0px 40px 0px 0px;
+            color: white;
+            background-image: linear-gradient(#39a7d6, #1a5db4, #0b1a91);
+            cursor: pointer;
+        }
+
+        .btn1:hover {
+            background-image: linear-gradient(#0b1a91, #0b1a91, #0b1a91);
+        }
+
+        .container {
+            background-image: url('https://www.dazzlinginsights.com/wp-content/uploads/2020/04/AdobeStock_119910257-scaled-e1588885195717.jpeg');
+            background-size: 100%;
+            background-repeat: repeat;
+            background-position: center top;
+            margin: 0px -8px;
+            padding: 28px;
+        }
+
+        .body1 {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        .allindia {
+            margin: 0% 8.5% 0% 5%;
+            width: 25%;
+        }
+
+        .allstate {
+            margin: 0% 8.5% 0% 0%;
+            width: 25%;
+        }
+
+        .job {
+            margin: 0px;
+            width: 9%;
+        }
+
+        .btn5,
+        .btn6,
+        .btn7,
+        .btn8,
+        .btn9,
+        .btn10,
+        .btn11,
+        .btn12 {
+            height: 52px;
+            width: 100%;
+            text-align: center;
+            font-size: larger;
+            font-weight: 800;
+            border-radius: 0;
+            background-image: linear-gradient(#a3e8ec, #1990b4, #1990b4, #1990b4, #1990b4, #1990b4);
+            border: 0px;
+            color: white;
+            font-family: 'Merriweather', serif;
+            cursor: pointer;
+            margin-bottom: 6px;
+        }
+
+        .btn5:hover,
+        .btn6:hover,
+        .btn7:hover,
+        .btn8:hover,
+        .btn9:hover,
+        .btn10:hover,
+        .btn11:hover,
+        .btn12:hover {
+            background-image: linear-gradient(#3ad3db, #1990b4, #1990b4, #1990b4, #3ad3db);
+            font-size: 19px;
+        }
+
+        .btn13 {
+            border-radius: 0;
+            width: 100%;
+            height: 32px;
+            text-align: left;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .btn13:hover {
+            background-color: #e4a16a;
+            color: white;
+        }
+
+        .btn14 {
+            border-radius: 0;
+            width: 100%;
+            height: 32px;
+            text-align: left;
+            margin: -2px 0px 0px 0px;
+            cursor: pointer;
+        }
+
+        .btn14:hover {
+            background-color: #e4a16a;
+            color: white;
+        }
+
+        .btn15 {
+            width: 100%;
+            height: 32px;
+            text-align: left;
+            border-radius: 0;
+            margin: -2px 0px 0px 0px;
+            cursor: pointer;
+        }
+
+        .btn15:hover {
+            background-color: #e4a16a;
+            color: white;
+        }
+
+        .btn16 {
+            border-radius: 0;
+            width: 100%;
+            height: 32px;
+            text-align: left;
+            margin: -2px 0px 0px 0px;
+            cursor: pointer;
+        }
+
+        .btn16:hover {
+            background-color: #e4a16a;
+            color: white;
+        }
+
+        .btn17 {
+            width: 100%;
+            height: 32px;
+            text-align: left;
+            border-radius: 0;
+            margin: -2px 0px 0px 0px;
+            cursor: pointer;
+        }
+
+        .btn17:hover {
+            background-color: #e4a16a;
+            color: white;
+        }
+
+        .panel {
+            margin-top: 20px;
+            border: 8px;
+            border-color: #084ea8;
+        }
+
+        .panel-heading {
+            height: 28px;
+            width: 101%;
+            background-color: #9cbeebd0;
+            color: red;
+            font-style: italic;
+            padding-left: 8px;
+            margin-top: -16px;
+        }
+
+        .panel-body {
+            height: 182px;
+            width: 98.9%;
+            padding: 0px 12px 12px 12px;
+            background-image: linear-gradient(#9cbeebd0, #89b5eed0, #79aceed0, #609decd0, #4c92eed0, #3082eed0);
+        }
+
+        .footer {
+            height: 12vh;
+            width: 100%;
+            border-right-width: 10px;
+            padding-right: 16px;
+            margin: 0px 8px -8px -8px;
+            background-color: #0c155a;
+            color: white;
+            font-family: 'Lato', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .disclaimer {
+            width: 80%;
+            text-align: center;
+        }
+
+        .image2 {
+            display: none;
+        }
+
+        .upcs1 {
+            padding: 2px;
+            width: 790px;
+            color: #000000;
+            border: 2px;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        @media only screen and (max-width: 720px) {
+            .logo-1 {
+                display: none;
+            }
+
+            .homeimg {
+                display: none;
+            }
+
+            .image2 {
+                display: block;
+                width: 100%;
+                margin-top: -20px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <p>All India Government Jobs</p>
+        </div>
+    </nav>
+    <div>
+        <img class="logo-1" title="Join Recruiting Job" alt="Join Recruiting Job"
+            src="file:///C:/Users/Mohammed%20Arshan/Desktop/mini%20project%20-%20Copy/mini%20project%20-%20Copy/Join%20Recruting%20Job.jpg">
+        <img src="file:///C:/Users/admin/Pictures/Saved%20Pictures/Homeimg%20phone.png" class="image2" />
+        <img class="homeimg" title="Latest Government Jobs" alt="Latest Government Jobs"
+            src="file:///C:/Users/Mohammed%20Arshan/Desktop/mini%20project%20-%20Copy/mini%20project%20-%20Copy/AIGJ%20images/Govt%20jobs.jpg">
+        <div class="profilebar">
+            <img class="profile" title="profile" alt="profile" src="file:///C:/Users/Mohammed%20Arshan/Downloads/jobrecruitingjob/jobrecruitingjob/profile%20icon.png">
+            <input class="search" type="text" placeholder="Search or type a URL">
+            <button class="btn">Job Predictor</button>
+            <button class="btn1">Sign in</button>
+        </div>
+        <div class="container">
+            <section class="body1">
+                <section class="allindia">
+                    <div>
+                        <a href="#upsc">
+                            <button class="btn5">UPSC</button>
+                        </a><br>
+                    </div>
+                    <div>
+                        <a href="#scc">
+                            <button class="btn6">SSC</button>
+                        </a><br>
+                    </div>
+                    <div>
+                        <a href="#other-all-india-exam">
+                            <button class="btn7">OTHER ALL INDIA EXAM</button>
+                        </a><br>
+                    </div>
+                    <div>
+                        <a href="#all-india-fellow">
+                            <button class="btn8">ALL INDIA FELLOW</button>
+                        </a>
+                    </div>
+                </section>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <b>Related to News, Announcements and Advertisement:</b>
+                    </div>
+                    <div class="panel-body">
+                        <marquee behavior="scroll" scrollamount="3" direction="up">
+                            <b>SSC CGL Recruitment 2022 - Apply Online for Combined Graduate Level Exam.
+                                <a style="color: rgb(4, 0, 223); text-decoration: none;"
+                                    href="file:///D:/mini%20project/SSC%20CGL%202022.html">Get Details...</a><br>
+                                UPSC Civil Services Recruitment 2022 - Apply Online for 816 Posts.
+                                <a style="color: rgb(4, 0, 223); text-decoration: none;"
+                                    href="file:///D:/mini%20project/UPSC%20Civil%20Services.html">Get Details...</a><br>
+                                RBI Assistant Recruitment 2022 - Apply Online for 950 Posts.
+                                <a style="color: rgb(4, 0, 223); text-decoration: none;"
+                                    href="file:///D:/mini%20project/RBI%20Assitant.html">Get Details...</a><br>
+                                UPSC Indian Forest Service Recruitment 2022 - Apply Online For Indian Forest Service
+                                Exam.
+                                <a style="color: rgb(4, 0, 223); text-decoration: none;"
+                                    href="file:///D:/mini%20project/UPSC%20IFS.html">Get Details...</a><br>
+                                Indian Coast Guard Navik (DB, GD) & Yantrik 02/2022 - Apply Online for 322 Posts <br>
+                                CISF Head Constable (General Duty) Recruitment 2022 - 249 Vacancy <br>
+                                OSCB Asst Manager & Banking Asst Recruitment 2022 - Apply Online For 725 Vacancy <br>
+                                Central Bank of India Specialist Officer Recruitment 2021 - Apply Online for 214 Vacancy
+                                <br>
+                                RRC Level 1 Recruitment 2021 - Photo/Signature Modification Link Available <br>
+                            </b>
+                        </marquee>
+                    </div>
+                </div>
+            </section>
+            <div>
+                <a name="upsc"></a>
+            </div>
+            <table
+                style="width: 100%; background-color: #79aceed0; vertical-align: middle; border-color: rgb(190, 190, 190);"
+                border="2">
+                <tr>
+                    <td style="text-align: center; padding: 5px; font-family: 'Merriweather', serif; font-weight: bolder;"
+                        colspan="6">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 25px;">UPSC</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">POST DATE</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">EXAM / POST NAME</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">QUALIFICATION</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">ADVT NO</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">LAST DATE</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">MORE INFORMATION</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">26/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Administrative Officer,
+                            Assistant Professor – 27 Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Degree</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">004/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">17-03-2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="https://www.upsc.gov.in/sites/default/files/Advt-No-04-2022-Engl-250222.pdf"
+                            style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">12/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Assistant Professor, Store
+                            Officer, Asst Mineral Economist – 33 Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Degree, PG (Relevant
+                            Discipline)</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">03/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">03-03-2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="https://www.freejobalert.com/upsc-recruitment/16960/#AsstProfessor2022"
+                            style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <a name="scc"></a>
+            </div>
+            <table
+                style="width: 100%; background-color: #79aceed0; margin-top: 40px; vertical-align: middle; border-color: rgb(190, 190, 190);"
+                border="2">
+                <tr>
+                    <td style="text-align: center; padding: 5px; font-family: 'Merriweather', serif; font-weight: bolder;"
+                        colspan="6">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 25px;">SCC</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">POST DATE</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">EXAM / POST NAME</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">QUALIFICATION</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">ADVT NO</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">LAST DATE</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">MORE INFORMATION</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">02/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">CHSL (10+2) Exam
+                            2021</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">10+2</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">-----</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">07-03-2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="https://www.freejobalert.com/ssc-chsl-2021/958831/" style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <a name="other-all-india-exam"></a>
+            </div>
+            <table
+                style="width: 100%; background-color: #79aceed0; margin-top: 40px; vertical-align: middle; border-color: rgb(190, 190, 190);"
+                border="2">
+                <tr>
+                    <td style="text-align: center; padding: 5px; font-family: 'Merriweather', serif; font-weight: bolder;"
+                        colspan="7">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 25px;">OTHER ALL INDIA EXAM</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">POST DATE</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">RECRUITMENT BOARD</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">POST NAME</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">QUALIFICATION</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">ADVT NO</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">LAST DATE</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">MORE INFORMATION</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">26/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">NID, AP</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Controller, Faculty & Other –
+                            16 Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Diploma, Degree, PG (Relevant
+                            Disciplines)</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">-----</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">07-03-2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="http://www.nitttrchd.ac.in/sitenew1/pdf/2022/General%20instructions%2018.2.2022.pdf"
+                            style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">26/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">NITTTR</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Research Asst, Electronics
+                            Engineer & Oher – 6 Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Diploma, Degree, PG (Relevant
+                            Disciplines)</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">-----</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">31-03-2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="https://www.freejobalert.com/bank-note-press/72378/#JrTechnician"
+                            style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">26/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">The Bank Note Press,
+                            Dewas</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Junior Technician – 81
+                            Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">ITI</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">03/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">28-03-2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="https://www.esic.nic.in/attachments/recruitmentfile/39ebeaac9dcf1bd0f1ed6e8d2835d5ac.pdf"
+                            style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">25/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Part Time Specialist – 10
+                            Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Controller, Faculty & Other –
+                            16 Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">PG Degree/ Diploma</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">-----</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">04-03-2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="https://www.freejobalert.com/ncdir/49740/" style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">24/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">ICME- NCDIR</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Project Sceintist C, Project
+                            Technical Officer & Other – 12 Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Degree, PG, Ph.D (Relevant
+                            Engg Disciplines)</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">01/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">14-03-2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="http://career.opalindia.in/executive/jobs-at-opal_executive.php"
+                            style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">24/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">OPAL</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">General Manager, Executive
+                            Grade – 24 Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">-----</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">-----</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">18-03-2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="http://advertisement.xn--jpg%20%28720361%29%20%28cipet-6ec.gov.in%29/"
+                            style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">24/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">CIPET</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">JRF, Project Associate & Asst
+                            – 5 Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Degree (Relevant
+                            Disciplines)</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">-----</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">14-03-2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="https://www.freejobalert.com/sameer/18538/" style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">24/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">SAMEER</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">ITI Apprentice Trainee – 30
+                            Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">10th Class, 12th Class & ITI
+                            (Relevant Trade)</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">28-02 & 01-03-2022 – Walk
+                            in</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="https://www.freejobalert.com/gail-recruitment/11590/#ExecutiveTrainee"
+                            style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">23/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">GAIL India Ltd</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Executive Trainee – 48
+                            Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Degree (Engg)</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">-----</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">16-03-2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="https://www.becil.com/uploads/vacancy/81bf4a0b5f816e686ac0fae8ebf6e47c.pdf"
+                            style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">23/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">BECIL</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Radiographer, Medical Lab
+                            Technologist & Other – 96 Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">10+2, Degree (Relevant
+                            Disciplines)</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">-----</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">28-02-2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="https://nrcy.icar.gov.in/pdf/notification%20of%20walk%20in%20intervew%20through%20hybrid%20mode%20for%20YP-I%20&%20II%2022-02-2022.pdf"
+                            style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">23/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">ICAR-National Research Centre
+                            on Yak</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Young Professional – 5
+                            Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">-----</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">-----</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">26-02-2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="http://portal.mhrdnats.gov.in/sites/default/files/file_upload/Engagement_of_graduate_apprentice_Notification_HPCL_MR_0.PDF"
+                            style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">26/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">NID, AP</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Controller, Faculty & Other –
+                            16 Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Diploma, Degree, PG (Relevant
+                            Disciplines)</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">-----</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">07-03-2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="http://www.nitttrchd.ac.in/sitenew1/pdf/2022/General%20instructions%2018.2.2022.pdf"
+                            style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">26/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">NITTTR</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Research Asst, Electronics
+                            Engineer & Oher – 6 Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Diploma, Degree, PG (Relevant
+                            Disciplines)</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">-----</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">31-03-2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="https://www.freejobalert.com/bank-note-press/72378/#JrTechnician"
+                            style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">26/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">The Bank Note Press,
+                            Dewas</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Junior Technician – 81
+                            Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">ITI</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">03/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">28-03-2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="https://www.esic.nic.in/attachments/recruitmentfile/39ebeaac9dcf1bd0f1ed6e8d2835d5ac.pdf"
+                            style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">25/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Part Time Specialist – 10
+                            Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Controller, Faculty & Other –
+                            16 Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">PG Degree/ Diploma</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">-----</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">04-03-2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="https://www.freejobalert.com/ncdir/49740/" style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">24/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">ICME- NCDIR</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Project Sceintist C, Project
+                            Technical Officer & Other – 12 Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Degree, PG, Ph.D (Relevant
+                            Engg Disciplines)</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">01/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">14-03-2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="http://career.opalindia.in/executive/jobs-at-opal_executive.php"
+                            style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">24/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">OPAL</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">General Manager, Executive
+                            Grade – 24 Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">-----</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">-----</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">18-03-2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="http://advertisement.xn--jpg%20%28720361%29%20%28cipet-6ec.gov.in%29/"
+                            style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">24/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">CIPET</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">JRF, Project Associate & Asst
+                            – 5 Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Degree (Relevant
+                            Disciplines)</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">-----</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">14-03-2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="https://www.freejobalert.com/sameer/18538/" style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">24/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">SAMEER</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">ITI Apprentice Trainee – 30
+                            Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">10th Class, 12th Class & ITI
+                            (Relevant Trade)</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">28-02 & 01-03-2022 – Walk
+                            in</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="https://www.freejobalert.com/gail-recruitment/11590/#ExecutiveTrainee"
+                            style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">23/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">GAIL India Ltd</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Executive Trainee – 48
+                            Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Degree (Engg)</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">-----</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">16-03-2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="https://www.becil.com/uploads/vacancy/81bf4a0b5f816e686ac0fae8ebf6e47c.pdf"
+                            style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">23/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">BECIL</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Radiographer, Medical Lab
+                            Technologist & Other – 96 Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">10+2, Degree (Relevant
+                            Disciplines)</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">-----</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">28-02-2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="https://nrcy.icar.gov.in/pdf/notification%20of%20walk%20in%20intervew%20through%20hybrid%20mode%20for%20YP-I%20&%20II%2022-02-2022.pdf"
+                            style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">23/02/2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">ICAR-National Research Centre
+                            on Yak</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">Young Professional – 5
+                            Posts</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">-----</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">-----</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">26-02-2022</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <a href="http://portal.mhrdnats.gov.in/sites/default/files/file_upload/Engagement_of_graduate_apprentice_Notification_HPCL_MR_0.PDF"
+                            style="text-decoration: none;">
+                            <strong style="color: #00F; font-style: bold; font-size: 20px;">Get Details</strong></a>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <a name="all-india-fellow"></a>
+            </div>
+            <table
+                style="width: 100%; background-color: #79aceed0; margin-top: 40px; vertical-align: middle; border-color: rgb(190, 190, 190);"
+                border="2">
+                <tr>
+                    <td style="text-align: center; padding: 5px; font-family: 'Merriweather', serif; font-weight: bolder;"
+                        colspan="6">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 25px;">ALL INDIA FELLOW
+                            JOBS</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">POST DATE</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">EXAM / POST NAME</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">QUALIFICATION</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">ADVT NO</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">LAST DATE</strong>
+                    </td>
+                    <td style="text-align: left; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;">
+                        <strong style="color: #0c155a; font-style: bold; font-size: 20px;">MORE INFORMATION</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; padding: 5px; font-family: 'Cabin', sans-serif; font-weight: bolder;"
+                        colspan="6">
+                        <strong style="color: #000000; font-style: bold; font-size: 20px;">-----</strong>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            <p class="disclaimer">Copyright © 2021 JoinRecruitingJob.com All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

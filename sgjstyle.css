@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Lato:ital@1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.topStrip {
+    padding: 5px 0 9px;
+}
+.row {
+    width: 100%;
+    max-width: 1594px;
+    margin: 0 auto;
+}
+.topStrip .leftLinks {
+    float: left;
+    margin: 0 0 0 7px;
+}
+.topStrip ul {
+    list-style: none;
+    padding: 0;
+}
+.home {
+    border-right: 1px
+    solid rgb(17, 0, 255);
+}
+.english {
+    border-right: 1px
+    solid rgb(17, 0, 255);
+}
+.topStrip .rightLinks {
+    float: right;
+    margin: 0 15px 0 0;
+}
+.topStrip ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.topStrip li {
+    float: left;
+    padding: 0 10px;
+    line-height: 16px;
+    position: relative;
+}
+#wrapper {
+    max-width: 1582px;
+    margin: 0 auto -14px;
+    padding: 10px;
+    background: #ffffff url(../images/innerBg.jpg) left top repeat-x;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+#header {
+    position: relative;
+    background-color: #0c155a;
+    display: block;
+}
+.menu {
+    height: 6vh;
+    background-color: #0c155a;
+    color: white;
+    font-size: 22px;
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    padding: 0 23px;
+    align-items: center;
+}
+.logobar {
+    background: #ffffff;
+}
+#logo {
+    float: left;
+    padding: 10px 0 10px 20px;
+}
+#rightlogos {
+    float: right;
+    padding: 10px 0 10px 20px;
+}
+.titlebar {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 0 10px 20px;
+}
+.profilebar {
+    height: 9vh;
+    background-color: #0c155a;
+    color: white;
+    font-size: 22px;
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    padding: 0 16px;
+    align-items: center;
+}
+.profile{
+    display: flex;
+    cursor: pointer;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 1069px;
+    height: 28px;
+    margin: 0 25px;
+    padding: 0 15px;
+}
+.container{
+    min-height: 65vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 34px;
+    background-image: url('file:///D:/mini%20project/AIGJ%20images/aigj%20bg.jpg');
+}
+.notifications{
+    margin: 0px 61px 0px -22px;
+}
+.allindia{
+    margin: 0px 121px 0px 27px;
+}
+.allstate{
+    margin: 0px 121px 0px 0px;
+}
+.container2{
+    min-height: 0px;
+    background-color: black;
+    color: white;
+    padding: 0px;
+}
+
+footer{
+    height: 12vh;
+    background-color: #0c155a;
+    color: white;
+    font-family: 'Lato', sans-serif;
+} 
